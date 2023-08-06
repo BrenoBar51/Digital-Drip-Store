@@ -5,7 +5,7 @@ export default function Buttons(){
                 <button className="underline cursor-pointer">Cadastre-se</button>
             </div>
             <div>
-                <button className="bg-[#d40063] text-white cursor-pointer">Entrar</button>
+                <button className="bg-[#d40063] hover:bg-[#7b003a] text-white cursor-pointer">Entrar</button>
             </div>
         </div>
     )
