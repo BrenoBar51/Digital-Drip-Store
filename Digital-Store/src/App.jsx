@@ -1,10 +1,12 @@
 import './App.css'
-import NavBar from './components/moleculas/NavBar'
+import Header from './components/organism/Header'
+import Body from './components/organism/Body'
 
 function App() {
   return (
     <>
-      <NavBar />
+      <Header />
+      <Body />
     </>
   )
 }
