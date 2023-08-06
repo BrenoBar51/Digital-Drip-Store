@@ -2,6 +2,7 @@ import Carrinho from "../atoms/Carrinho";
 import Logo from "../atoms/Logo";
 import SearchBar from "../atoms/SearchBar";
 import Buttons from "../atoms/Buttons";
+import PageButtons from "../atoms/PageButtons";
 
 export default function NavBar(){
     return(
@@ -15,12 +16,7 @@ export default function NavBar(){
                 </ul>
             </nav>
             <nav className="h-16 w-full flex justify-start bg-white">
-                <ul className="w-full flex justify-start space-x-11 ml-2">
-                    <li className="text-[#8a8888] cursor-pointer">Home</li>
-                    <li className="text-[#8a8888] cursor-pointer">Produtos</li>
-                    <li className="text-[#8a8888] cursor-pointer">Categorias</li>
-                    <li className="text-[#8a8888] cursor-pointer">Meus Pedidos</li>
-                </ul>
+                <PageButtons />
             </nav>
         </div>
     )
