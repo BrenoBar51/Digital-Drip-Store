@@ -1,4 +1,4 @@
-export default function Page1(){
+export default function NavBar(){
     return(
         <>
         </>
