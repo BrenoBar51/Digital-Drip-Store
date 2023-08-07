@@ -1,8 +1,8 @@
 import Buttons from "../Buttons";
-import Carrinho from "./Carrinho";
-import Logo from "./Logo";
-import PageButtons from "./PageButtons";
-import SearchBar from "./SearchBar";
+import Carrinho from "../Carrinho";
+import Logo from "../Logo";
+import PageButtons from "../PageButtons";
+import SearchBar from "../SearchBar";
 
 export default function NavBar(){
     return(
