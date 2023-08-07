@@ -1,9 +1,9 @@
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Corpo/NavBar";
 
 export default function Header() {
     return (
         <>
-            <NavBar />            
+            <NavBar />
         </>
     )
 }
