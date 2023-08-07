@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 
 export default function NavBar(){
     return(
-        <div className="flex space-x-48">
+        <div className="flex space-x-20 m-8">
             <Logo />
             <SearchBar />
             <Buttons />
