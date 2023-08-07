@@ -1,7 +1,9 @@
+import TitulosMain from "../components/TitulosMain";
+
 export default function Main() {
     return (
-        <main className="flex w-[1440] h-[681]">
-            
+        <main className="flex w-full h-[681px]   p-4 bg-[#f5f5f5]">
+            <TitulosMain />
         </main>
     )
 }
