@@ -11,7 +11,7 @@ export default function NavBar(){
             <div className="flex space-x-44 m-8 justify-center mb-12">
                 <Logo />
                 <SearchBar />
-                <Buttons />
+                <Buttons value2='Entrar'/>
                 <Carrinho />
             </div>
         </div>
