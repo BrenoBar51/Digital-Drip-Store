@@ -8,7 +8,7 @@ export default function NavBar(){
     return (
         <>
             <div className="bg-white justify-center">
-            <div className="flex space-x-44 m-8 justify-center mb-12">
+            <div className="flex space-x-36 m-8 justify-center mb-12">
                 <Logo />
                 <SearchBar />
                 <Buttons />
