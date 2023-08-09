@@ -6,7 +6,7 @@ export default function AboutUs(){
             <div>
                 <LogoSemCor />
                 <div className="mt-[12%] text-white font-normal">
-                    Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                 </div>
             </div>
             <div className="pt-[17%] flex gap-4">
