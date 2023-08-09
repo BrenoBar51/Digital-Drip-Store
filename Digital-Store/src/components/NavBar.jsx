@@ -8,7 +8,7 @@ export default function NavBar(){
     return (
         <>
             <div className="bg-white justify-center">
-                <div className="ml-[5%] mt-[3%] flex space-x-[11%] justify-center">
+                <div className="ml-[4%] mr-[4%] mt-[3%] flex space-x-[11%] justify-center">
                     <Logo />
                     <SearchBar />
                     <Buttons value='Cadastre-se' value2='Entrar'/>
