@@ -1,3 +1,4 @@
+ 
 import TitulosMain from "../components/TitulosMain";
 
 export default function Main() {
