@@ -7,7 +7,7 @@ export default function Footer(){
     return(
         <div className="">
             <footer className="bg-black flex">
-                <div>
+                <div className="ml-[7%] mt-[5%] mr-[6%]">
                     <AboutUs />
                     <Informacoes />
                     <Categorias />
