@@ -9,8 +9,8 @@ import AirJordanPage from "./AirJordanPage";
 
 export default function Main() {
     return (
-        <main className="flex flex-col w-full h-full   p-4 bg-[#f5f5f5] box-border">
-            <section className="flex w-full h-611">
+        <main className="flex flex-col w-full h-full   p-4  box-border">
+            <section className="flex w-full h-611 bg-[#f5f5f5]">
                 <TitulosMain />
                 <Carrossel />
             </section>
