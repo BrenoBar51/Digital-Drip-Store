@@ -9,10 +9,16 @@ export default function AboutUs(){
                     Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore.
                 </div>
             </div>
-            <div className="pt-[17%]  flex gap-4">
-                <box-icon name='facebook' type='logo' color='#ffffff' ></box-icon>
-                <box-icon name='instagram' type='logo' color='#ffffff' ></box-icon> 
-                <box-icon name='twitter' type='logo' color='#ffffff' ></box-icon>
+            <div className="pt-[17%] flex gap-4">
+                <div className="cursor-pointer">
+                    <box-icon  name='facebook' type='logo' color='#ffffff' ></box-icon>
+                </div>
+                <div className="cursor-pointer">
+                    <box-icon name='instagram' type='logo' color='#ffffff' ></box-icon> 
+                </div>
+                <div className="cursor-pointer">
+                    <box-icon name='twitter' type='logo' color='#ffffff' ></box-icon>
+                </div>
             </div>
         </div>
     )
