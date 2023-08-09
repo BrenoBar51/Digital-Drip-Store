@@ -15,7 +15,7 @@ export default function NavBar(){
                     <Carrinho />
                 </div>
             </div>
-            <div className="ml-[7%] mt-[4%] flex space-x-20 justify-start">
+            <div className="ml-[7%] mt-[4%] flex space-x-20 justify-start pb-6">
                 <PageButtons />
             </div>
         </>
