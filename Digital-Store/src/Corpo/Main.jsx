@@ -1,6 +1,11 @@
 import Carrossel from "../components/Carrossel";
 import TitulosMain from "../components/TitulosMain";
+
 import CardThree from "../components/section2/CardsThree";
+
+import AirJordanPage from "./AirJordanPage";
+ 
+
 
 export default function Main() {
     return (
