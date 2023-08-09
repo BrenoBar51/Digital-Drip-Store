@@ -2,8 +2,8 @@ export default function Informacoes(){
     return(
         <div className="">
           <div className="text-white font-normal, ps-40">
-            <h6 className="pt-14">Informaçoes</h6>
-          <div className="pt-6">  
+            <h6 className="mt-[48%]">Informações</h6>
+          <div className="pt-[30%] space-y-[14%]">  
                 <div className="cursor-pointer">Sobre o Drip</div>
                 <div className="cursor-pointer">Segurança</div>
                 <div className="cursor-pointer">Wishlist</div>
