@@ -4,11 +4,12 @@ export default function Categorias(){
             <div className="pt-14">Categorias</div>
            <div className="pt-6">
             
-                <div className="cursor-pointer">Camisetas</div>
-                <div className="cursor-pointer">Calças</div>
-                <div className="cursor-pointer">Bonés</div>
-                <div className="cursor-pointer">Headphones</div>
-                <div className="cursor-pointer">Tênis</div>
+           <div> <a href="#">Camisetas</a> </div> 
+             <div> <a href="#">Calças</a> </div> 
+             <div> <a href="#">Bonés</a></div>
+             <div> <a href="#">Headphones</a></div>
+             <div> <a href="#">Tênis</a></div>
+            
             
             </div>
           </div>  
