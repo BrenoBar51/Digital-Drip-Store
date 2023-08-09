@@ -5,10 +5,10 @@ export default function AboutUs(){
         <div className="grid grid-rows-3">
             <div><LogoSemCor /></div>
             <div className="text-white font-normal">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit, sed do eiusmod tempor<br/>incididunt ut labore et dolore.</div>
-            <div className="flex">
-                <box-icon type='logo' name='facebook-circle'></box-icon>
-                <box-icon type='logo' name='instagram-alt'></box-icon>
-                <box-icon name='twitter' type='logo' ></box-icon>
+            <div className="pt-6  flex gap-4">
+            <box-icon name='facebook' type='logo' color='#ffffff' ></box-icon>
+            <box-icon name='instagram' type='logo' color='#ffffff' ></box-icon> 
+            <box-icon name='twitter' type='logo' color='#ffffff' ></box-icon>
             </div>
         </div>
     )
