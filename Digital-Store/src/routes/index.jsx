@@ -5,6 +5,10 @@ import Home from "../pages/home/Home";
 
 export const router = createBrowserRouter([
     {
+    path: "/home",
+    element: <Home />
+    },
+    {
       path: "/",
       element: <Home />
     },
