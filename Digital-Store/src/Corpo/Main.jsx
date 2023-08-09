@@ -1,5 +1,7 @@
 import Carrossel from "../components/Carrossel";
 import TitulosMain from "../components/TitulosMain";
+import AirJordanPage from "./AirJordanPage";
+ 
 
 export default function Main() {
     return (
