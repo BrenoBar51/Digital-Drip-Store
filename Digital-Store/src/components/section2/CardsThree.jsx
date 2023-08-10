@@ -34,7 +34,7 @@ export default function CardThree() {
                     span='spanbt' 
                     subt='cardtil' 
                     name2='Novo Beats Bass'/>
-                
+
                 
             </div>
         </section>
