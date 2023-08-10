@@ -1,11 +1,11 @@
 import Footer from "../../Corpo/Footer"
-import NavBar from "../../components/NavBar"
+import Header from "../../Corpo/Header"
 import SideBar from "../../components/SideBar"
 
 export default function ProductList() {
     return (
         <>
-            <NavBar />
+            <Header />
             <SideBar />
             <Footer />
         </>
