@@ -1,7 +1,7 @@
 export default function Categorias(){
     return(
          <div className="text-white font-normal, ps-28">
-            <div className="pt-14">Categorias</div>
+            <div className="pt-3">Categorias</div>
            <div className="pt-6">
             
            <div> <a href="#">Camisetas</a> </div> 

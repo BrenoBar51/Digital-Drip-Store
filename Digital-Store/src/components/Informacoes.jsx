@@ -2,7 +2,7 @@ export default function Informacoes(){
     return(
         <div className="">
           <div className="text-white font-normal, ps-40">
-            <h6 className="pt-14">Informaçoes</h6>
+            <h6 className="pb-">Informaçoes</h6>
           <div className="pt-6">  
             
              <div> <a href="#">Sobre o Drip</a> </div> 

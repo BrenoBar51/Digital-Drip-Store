@@ -1,9 +1,9 @@
 import Carrossel from "../components/Carrossel";
-import TitulosMain from "../components/TitulosMain";
+import TitulosMain from "../components/section 4/TitulosMain";
 
 import CardThree from "../components/section2/CardsThree";
 
-import AirJordanPage from "./AirJordanPage";
+import AirJordanPage from "../components/section 4/AirJordanPage";
  
 
 
@@ -16,6 +16,9 @@ export default function Main() {
             </section>
             <section className="w-full h-[1000px]">
                 <CardThree />
+            </section>
+            <section className="w-full h-[700px]">
+                <AirJordanPage />
             </section>
 
         </main>
