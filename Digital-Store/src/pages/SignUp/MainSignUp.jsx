@@ -6,25 +6,25 @@ export default function MainSignUpPage(){
                     <p className="font-bold text-[36px] tracking-wide w-[523px] h-[36px]">Crie sua conta</p>
                     <p className="font-normal w-[306px] tracking-wide text-[16px]">Já possui uma conta ? Entre <a className="underline" href="http://localhost:5173/login">aqui.</a></p>
                 </div>
-                <form className="grid grid-flow-row space-y-[6%]">
+                <form className="grid grid-flow-row space-y-[4%]">
                     <label id="email" name="email">Email</label>
                     <input type="text" name="email" placeholder="Insira seu email" />
-                    <button className="w-[100%] h-[40px] flex-shrink-0 bg-[#C92071] text-[#f5f5f5] rounded-lg hover:bg-[#c92085] hover:transition-[2s]">
-                        Criar conta
-                    </button>
-                    <div className="flex w-[100%] justify-center gap-[8%]">
-                        <p className="font-normal text-[16px] tracking-wide">Ou faça Login com</p>
-                        <div className="flex space-x-[60%]">
-                            <div className="cursor-pointer">
+                </form>
+                <a href="http://localhost:5173/signupform"><button className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#C92071] text-[#f5f5f5] rounded-lg hover:bg-[#c92085] hover:transition-[2s]">
+                    Criar conta
+                </button></a>
+                <div className="flex w-[100%] justify-center gap-[8%]">
+                    <p className="font-normal text-[16px] tracking-wide">Ou faça Login com</p>
+                    <div className="flex space-x-[60%]">
+                        <div className="cursor-pointer">
                                 <box-icon type='logo' name='gmail' color='#ff0004'></box-icon>
-                            </div>
-                            <div className="cursor-pointer">
-                                <box-icon name='facebook-circle' type='logo' color='#0072ff'>
-                                </box-icon>
-                            </div>
+                        </div>
+                        <div className="cursor-pointer">
+                            <box-icon name='facebook-circle' type='logo' color='#0072ff'>
+                            </box-icon>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
             <div className="flex h-[100%] w-[100%]">
                 <img className="mt-[15%] ml-[15%] w-[256px] h-[483px]" src="src\assets\image\pexels-melvin-buezo-2529148 1.png" alt="" />
