@@ -8,14 +8,14 @@ export default function NavBar(){
     return (
         <>
             <div className="bg-white justify-center">
-                <div className="flex space-x-36 m-8 justify-center mb-12">
-                    <Logo />
+                <div className="ml-[5%] mt-[3%] flex space-x-[12%] justify-center">
+                    <a href="http://localhost:5173/home"><Logo /></a>
                     <SearchBar />
                     <Buttons value='Cadastre-se' value2='Entrar'/>
                     <Carrinho />
                 </div>
             </div>
-            <div className="flex space-x-16 justify-start">
+            <div className="ml-[7%] mt-[4%] flex space-x-20 justify-start">
                 <PageButtons />
             </div>
         </>

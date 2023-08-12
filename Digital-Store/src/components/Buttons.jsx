@@ -8,7 +8,7 @@ export default function Buttons(props){
 
                 ${props.type === 'retangulo' && 'w-[220px] h-[48px]'}
             `}>
-                {props.value2}
+                <a href="http://localhost:5173/login">{props.value2}</a>
                 {props.value3}
             </button>
         </div>
