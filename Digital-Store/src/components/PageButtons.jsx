@@ -5,7 +5,7 @@ export default function PageButtons(){
                 <li className="cursor-pointer text-[#474747] font-bold hover:text-[#C92071] hover:underline"
                 
                 >
-                    <a href="http://localhost:5173/home">Home</a>
+                    <a href="http://localhost:5173/">Home</a>
                 </li> 
                 <li className="cursor-pointer text-[#474747] font-bold hover:text-[#C92071] hover:underline"
                

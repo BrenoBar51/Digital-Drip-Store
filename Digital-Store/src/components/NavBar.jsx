@@ -9,7 +9,7 @@ export default function NavBar(){
         <>
             <div className="bg-white justify-center">
                 <div className="ml-[5%] mt-[3%] flex space-x-[12%] justify-center">
-                    <a href="http://localhost:5173/home"><Logo /></a>
+                    <a href="http://localhost:5173/"><Logo /></a>
                     <SearchBar />
                     <Buttons value='Cadastre-se' value2='Entrar'/>
                     <Carrinho />

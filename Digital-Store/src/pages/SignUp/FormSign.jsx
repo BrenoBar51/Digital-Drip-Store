@@ -31,7 +31,7 @@ export default function FormSignUp(){
                         <p className="font-medium ">Quero receber por email ofertas e novidades das lojas da Digital Store. A frequência de envios pode<br/>variar de acordo com a interação do cliente.</p>
                     </div>
                 </form>
-                <a href="http://localhost:5173/home"><button type="submit" className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#C92071] text-[#f5f5f5] rounded-lg hover:bg-[#c92085] hover:transition-[2s]">
+                <a href="http://localhost:5173/"><button type="submit" className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#C92071] text-[#f5f5f5] rounded-lg hover:bg-[#c92085] hover:transition-[2s]">
                     Criar conta
                 </button></a>
             </div>
