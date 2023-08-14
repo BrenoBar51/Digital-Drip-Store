@@ -2,7 +2,7 @@ import LogoSemCor from "./LogoSemCor";
 
 export default function AboutUs(){
     return(
-        <div className="pt-[16%] grid grid-rows-3">
+        <div className="pt-[16%] ">
             <div>
                 <LogoSemCor />
                 <div className="mt-[12%] text-white font-normal">
