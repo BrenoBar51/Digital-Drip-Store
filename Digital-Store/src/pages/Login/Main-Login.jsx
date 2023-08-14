@@ -19,7 +19,7 @@ export default function MainLogin(){
                         Esqueci minha senha
                     </NavLink> 
                 </form>
-                <a href="http://localhost:5173/home"><button className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#C92071] text-[#f5f5f5] rounded-lg hover:bg-[#c92085] hover:transition-[2s]">
+                <a href="http://localhost:5173/"><button className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#C92071] text-[#f5f5f5] rounded-lg hover:bg-[#c92085] hover:transition-[2s]">
                         Acessar conta
                 </button></a>
                 <div className="flex w-[100%] justify-center gap-[8%]">
