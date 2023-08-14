@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import Buttons from "./Buttons";
 import Carrinho from "./Carrinho";
 import Logo from "./Logo";
@@ -10,7 +11,9 @@ export default function NavBar(){
             <div className="bg-white justify-center">
                 
                 <div className="ml-[5%] mt-[3%] flex space-x-[12%] justify-center">
-                    <a href="http://localhost:5173/home"><Logo /></a>
+                    <NavLink to={'/home'} className={({isActive}) => (isActive ? '' : '')}>
+                        <Logo /> 
+                    </NavLink>
                     <SearchBar />
                     <Buttons valueB1='Cadastre-se' value2='Entrar'/>
                     <Carrinho />

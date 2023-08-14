@@ -1,17 +1,23 @@
+import { NavLink } from "react-router-dom";
+
 export default function MainLogin(){
     return(
         <div className="flex">
             <div className="ml-[7%] mt-[10%] mb-[15%] p-[3%] space-y-[9%] bg-white justify-start ">
                 <div className="space-y-[7%]">
                     <p className="font-bold text-[36px] tracking-wide w-[523px] h-[36px]">Acesse sua conta</p>
-                    <p className="font-normal w-[306px] tracking-wide text-[16px]">Novo cliente ? Então registre-se <a className="underline" href="http://localhost:5173/signup">aqui.</a></p>
+                    <p className="font-normal w-[306px] tracking-wide text-[16px]">Novo cliente ? Então registre-se <NavLink to='/signup' className={({isActive}) => (isActive ? 'bg-[#c92085]' : '')}>
+                        aqui.
+                    </NavLink></p>
                 </div>
                 <form className="grid grid-flow-row space-y-[6%]">
                     <label name="login">Login</label>
                     <input name="login" id="login" type="text" placeholder="Insira seu login ou email" required/>
                     <label name="senha">Senha</label>
                     <input type="text" name="senha" id="senha" placeholder="Insira sua senha" required/>
-                    <a className="underline" href="http://localhost:5173/signup">Esqueci minha senha</a>
+                    <NavLink to='/signup' className={({isActive}) => (isActive ? '' : '')}>
+                        Esqueci minha senha
+                    </NavLink> 
                 </form>
                 <a href="http://localhost:5173/home"><button className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#C92071] text-[#f5f5f5] rounded-lg hover:bg-[#c92085] hover:transition-[2s]">
                         Acessar conta
