@@ -1,6 +1,6 @@
 import Buttons from "./Buttons";
 
-export default function TitulosMain() {
+export default function TitulosMain(props) {
     return (
         <section className="flex flex-col gap-[5%] ml-[6%] mt-[10%]">
             <p className="w-[285px] h-[24px] text-[#f6aa1c] text-base leading-6 tracking-[0.75px] font-bold">Melhores ofertas personalizadas</p>
