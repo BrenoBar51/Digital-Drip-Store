@@ -16,3 +16,9 @@ export default function ButtonsAirjordans(props){
         </div>
     )
 }
+/**
+ * Mano, n precisava criar esse componente kkkkkk, ja tinha um para buttons
+ * 
+ * ₢Krebinn
+ * 
+ */

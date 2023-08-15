@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import LogoSemCor from "./LogoSemCor";
 
 export default function AboutUs(){

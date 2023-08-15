@@ -14,7 +14,9 @@ export default function Footer(){
                   <div className="col-span-6s"> <Categorias /> </div>  
                   <div className="col-span-2s"> <Contato /></div> 
                 </div>
+                <div>
                   <Copyright />
+                </div>
             </footer>
         </div>
     )
