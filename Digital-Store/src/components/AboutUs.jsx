@@ -1,10 +1,13 @@
+import { NavLink } from "react-router-dom";
 import LogoSemCor from "./LogoSemCor";
 
 export default function AboutUs(){
     return(
         <div className="pt-[16%] ">
             <div>
-                <LogoSemCor />
+                <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
+                    <LogoSemCor />
+                </NavLink>
                 <div className="mt-[12%] text-white font-normal">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
                 </div>

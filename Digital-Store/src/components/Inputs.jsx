@@ -5,13 +5,13 @@ export default function Input(props){
                 min-w-full 
                 bg-gray-100 
                 font-normal
-                rounded
+                rounded-md
                 border-none
-                ${props.className}
+                h-[60px]
+                relative
             `} 
             type={props.type}
-            placeholder={`${props.placeholder}
-            `}
+            placeholder={`      ${props.placeholder}`}
             value={props.value}
             name={props.name}
             id={props.id}
