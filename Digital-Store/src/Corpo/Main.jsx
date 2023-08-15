@@ -5,6 +5,7 @@ import CardThree from "../components/section2/CardsThree";
 import ColectionCards from "../components/section2/ColectionCards";
 
 import AirJordanPage from "../components/section 4/AirJordanPage";
+import TableCards from "../components/section3/TableCards";
  
 
 
@@ -18,6 +19,9 @@ export default function Main() {
             <section className="w-full  h-[730px] bg-[#F9F8FE]">
                 <CardThree />
                 <ColectionCards />
+            </section>
+            <section className="w-full h-[1070px] bg-[#f9f8fe]">
+                <TableCards />
             </section>
             <section className="w-full bg-[#fff] h-[700px]">
                 <AirJordanPage />
