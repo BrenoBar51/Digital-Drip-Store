@@ -9,7 +9,7 @@ export default function NavBar(){
     return (
         <>
             <div className="bg-white justify-center">
-                <div className="ml-[5%] mt-[3%] flex gap-[5%] justify-center">
+                <div className="ml-[5%] mt-[3%] flex gap-[3%] justify-center">
                     <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
                         <Logo /> 
                     </NavLink>
@@ -18,7 +18,7 @@ export default function NavBar(){
                     <Carrinho />
                 </div>
             </div>
-            <div className="ml-[7%] mt-[4%] flex space-x-20 justify-start pb-6">
+            <div className="ml-[7%] mt-[4%] flex space-x-20 justify-start pb-[2%]">
                 <PageButtons />
             </div>
         </>
