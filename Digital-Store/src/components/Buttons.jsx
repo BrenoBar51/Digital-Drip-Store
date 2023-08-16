@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 export default function Buttons(props){
     return(
-        <div className="flex gap-x-[40px]">
-            <button className="text-[#474747] underline ">
-                <NavLink to={'/signup'} className={({isActive}) => (isActive ? '' : '')}>
+        <div className="flex gap-[10%]">
+            <button className="text-[#474747] underline w-[145px]">
+                <NavLink to={'/signup'} className={({isActive}) => (isActive ? 'min-w-full' : 'min-w-full')}>
                     {props.valueB1}
                 </NavLink>
             </button>
