@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Input from "../../components/Inputs";
+import Checkbox from "../../components/InputCheckbox";
 
 export default function FormSignUp(){
     return(
@@ -30,7 +31,7 @@ export default function FormSignUp(){
                     <label id="complemento" name="complemento">Complemento</label>
                     <Input type={'text'} name={'complemento'} placeholder={'Insira seu complemento'} />
                     <div className="flex">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-[#C92071] bg-[#C92071] border-[#C92071] rounded focus:ring-[#f02788] dark:ring-offset-[#C92071] focus:ring-2 dark:bg-[#C92071] dark:border-[#C92071] accent-[#C92071]" />
+                        <Checkbox />
                         <label for="default-checkbox" class="ml-2 text-sm font-medium text-[#474747]">Quero receber por email ofertas e novidades das lojas da Digital Store. A frequência de envios pode<br/>variar de acordo com a interação do cliente.</label>
                     </div>
                 </form>
