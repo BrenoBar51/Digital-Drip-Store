@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Buttons(props){
     return(
         <div className="flex gap-x-[40px]">
-            <button className="text-[#474747] underline">
+            <button className="text-[#474747] underline ">
                 <NavLink to={'/signup'} className={({isActive}) => (isActive ? '' : '')}>
                     {props.valueB1}
                 </NavLink>
