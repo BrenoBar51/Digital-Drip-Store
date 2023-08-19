@@ -1,7 +1,13 @@
-export default function InputRadio() {
+export default function InputRadio(props){
     return(
         <div>
-            <input type="radio" name="" id="" class="w-4 h-4 text-[#C92071] bg-[#C92071] border-[#C92071] rounded focus:ring-[#f02788] dark:ring-offset-[#C92071] focus:ring-2 dark:bg-[#C92071] dark:border-[#C92071] accent-[#C92071]" />
+            <input type="radio" className={`w-4 h-4 rounded accent-[#C92071]
+            ${props.className}
+            `}
+            name={props.name}
+            id={props.id}
+            value={`${props.value}`}
+            />
         </div>
     )
 }

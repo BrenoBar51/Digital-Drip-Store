@@ -9,8 +9,9 @@ export default function Input(props){
                 border-none
                 h-[60px]
                 relative
+                ${props.className}
             `} 
-            type={props.type}
+            type={`${props.type}`}
             placeholder={`      ${props.placeholder}`}
             value={props.value}
             name={props.name}
