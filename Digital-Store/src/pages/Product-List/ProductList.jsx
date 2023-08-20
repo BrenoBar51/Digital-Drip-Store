@@ -2,6 +2,8 @@
 import Footer from "../../Corpo/Footer";
 import { Card } from "../../components/Card";
 import NavBar from "../../components/NavBar";
+import { Select } from "../../components/Select";
+import { Results } from "../../components/Results";
 import SideBar from "../../components/SideBar";
 import { cardsInfo } from "../../utils/mocks/cardsInfo";
 
@@ -9,11 +11,15 @@ export default function ProductList() {
   return (
     <>
       <NavBar />
-      <section className="flex mx-[70px] mb-28 mt-10 gap-1">
+      <div className="flex justify-between items-center mx-[7%]">
+        <Results/>
+        <Select/>
+      </div>
+      <section className="flex mx-[7%] mb-28 mt-10 gap-1">
         <aside className="w-[308px] h-[720px]">
           <SideBar />
         </aside>
-        <div className="flex flex-wrap w-[904px]">
+        <div className="flex justify-center flex-wrap w-[1200px]">
             {cardsInfo.map((card) => {
                 return(
                     <Card 
