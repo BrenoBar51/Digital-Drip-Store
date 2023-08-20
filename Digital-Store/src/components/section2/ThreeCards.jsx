@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import Buttons from '../Buttons'
 
 export default function ThreeCards(props) {
@@ -15,7 +16,9 @@ export default function ThreeCards(props) {
                             <h1 className={`${props.subt === 'cardtil' && 'text-[32px] w-[182px] z-20 h-[72] text-[#1f1f1f] not-italic font-extrabold leading-[36px] tracking-[0.5px]'}`}>
                                 {props.name2}
                             </h1>
-                            <Buttons buyB='Comprar' edition='inverso'/>
+                            <NavLink to={'/productslist'} className={({isActive}) => (isActive ? '' : '')}>
+                                <Buttons buyB='Comprar' edition='inverso'/>
+                            </NavLink>
                         </div>
                 </div>
         </>

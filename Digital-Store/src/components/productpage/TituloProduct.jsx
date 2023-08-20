@@ -19,11 +19,11 @@ export default function TituloProducts() {
          
           <div className="relative text-[#8F8F8F] font-semibold top-[50px]">Tamanho</div>
           <div className="grid grid-cols-5">
-          <div className="border-neutral-600 border-[#CCCCCC] border-2 w-[48px] h-[48px] relative left-[] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">39</div></div>
-          <div className="border-neutral-600 border-[#CCCCCC] border-2 w-[48px] h-[48px] relative right-[40px] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">40</div></div>
-          <div className="border-neutral-600 border- bg-[#C92071] border- w-[48px] h-[48px] relative right-[80px] top-[53px] rounded "><div className="text-[20px] text-white relative top-[9px] left-[13px]">41</div></div>
-          <div className="border-neutral-600 border-[#CCCCCC] border-2 w-[48px] h-[48px] relative right-[120px] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">42</div></div>
-          <div className="border-neutral-600 border-[#CCCCCC] border-2 w-[48px] h-[48px] relative right-[160px] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">43</div></div>
+          <div className="border-[#CCCCCC] border-2 w-[48px] h-[48px] relative left-[] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">39</div></div>
+          <div className="border-[#CCCCCC] border-2 w-[48px] h-[48px] relative right-[40px] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">40</div></div>
+          <div className="bg-[#C92071] w-[48px] h-[48px] relative right-[80px] top-[53px] rounded "><div className="text-[20px] text-white relative top-[9px] left-[13px]">41</div></div>
+          <div className="border-[#CCCCCC] border-2 w-[48px] h-[48px] relative right-[120px] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">42</div></div>
+          <div className="border-[#CCCCCC] border-2 w-[48px] h-[48px] relative right-[160px] top-[53px] rounded "><div className="text-[20px] text-[#474747] relative top-[7px] left-[9px]">43</div></div>
           </div>
           <div className="relative text-[#8F8F8F] font-semibold top-[60px]">Tamanho</div>
           <div className="flex gap-4">
