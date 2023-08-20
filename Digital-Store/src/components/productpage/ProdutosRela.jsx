@@ -5,7 +5,7 @@ import { cardsInfoProductPage } from "./CardsinfoProductPage";
 export default function ProdutosRela() {
     return(
         <div>
-        <div className="flex"> <h1 className="text-[20px] relative top-[20px] font-semibold ml-[5%] text-[#474747]">Produtos Relacionados</h1> <NavLink to={'/productslist'}><h1 className="text-[#C92071] ml-[66%]">Ver Todos ➜</h1></NavLink> </div>
+        <div className="flex"><h1 className="text-[20px] relative top-[20px] font-semibold ml-[5%] text-[#474747]">Produtos Relacionados</h1> <NavLink to={'/productslist'}><h1 className="text-[#C92071] ml-[66%]">Ver Todos ➜</h1></NavLink> </div>
          <div className="flex flex-wrap relative top-[39px] gap-2 left-[90px] w-[1200px]">
             {cardsInfoProductPage.map((card) => {
                 return(
