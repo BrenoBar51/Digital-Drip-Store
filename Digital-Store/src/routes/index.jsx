@@ -33,7 +33,8 @@ export const router = createBrowserRouter([
     path: "/ProductPage",
     element: <ProductPage />
  },
+  {
     path: "/comprar",
     element: <ComprarPage />
- }
+  }
 ]);  
