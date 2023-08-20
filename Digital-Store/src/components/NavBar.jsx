@@ -9,7 +9,7 @@ export default function NavBar(){
     return (
         <>
             <div className="bg-white justify-center">
-                <div className="ml-[5%] mt-[3%] flex gap-[3%] justify-center">
+                <div className="ml-[5%] mt-[3%] flex gap-[4%] justify-center">
                     <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
                         <Logo /> 
                     </NavLink>

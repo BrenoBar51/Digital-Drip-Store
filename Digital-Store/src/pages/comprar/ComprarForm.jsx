@@ -78,22 +78,40 @@ export default function ComprarForm(){
                     Realizar pagamento
                 </button></NavLink>
             </div>
-            <div className="h-fit mt-[10%] ml-[6%] p-[2%] space-y-[9%] bg-white justify-center">
+            <div className="h-fit mt-[10%] ml-[2%] p-[2%] space-y-[5%] bg-white">
             <p className="font-bold text-[#474747] w-[306px] tracking-wide text-[24px]">Resumo</p>
             <hr className=""/>
-            <img className="w-[100px] h-[80px] bg-[#E2E3FF]" src="src\assets\image\6d839d9bc81eba71990cf69a20c77364.png" alt="" />
+            <div className="flex">
+                <img className="w-[90px] h-[70px] bg-[#E2E3FF]" src="src\assets\image\6d839d9bc81eba71990cf69a20c77364.png" alt="" />
+                <p className="text-[#1F1F1F] tracking-wider ml-[5%] font-bold text-[14px]">Tênis Nike Revolution 6 Next Nature Masculino</p>
+            </div>
             <hr className=""/>
-            <div className="grid">
-                <div>
-
+            <div className="grid space-y-[20%] justify-start">
+                <div className="flex">
+                    <p className="text-[#8F8F8F] font-medium text-[14px]">Subtotal:</p>
+                    <p className="text-[#1F1F1F] font-medium text-[14px] min-w-full">R$ 219,00</p>
                 </div>
-                <div>
-
+                <div className="flex">
+                    <p className="text-[#8F8F8F] font-medium text-[14px]">Frete:
+                    </p>
+                    <p className="text-[#1F1F1F] font-medium text-[14px] min-w-full">R$ 0,00</p>
                 </div>
-                <div>
-
+                <div className="flex">
+                    <p className="text-[#8F8F8F] font-medium text-[14px]">Desconto:</p>
+                    <p className="text-[#1F1F1F] font-medium text-[14px] min-w-full">R$ 30,00</p>
                 </div>
             </div>
+            <div className="flex p-[6%] bg-[#F6AA1C26]">
+                <p className="font-bold justify-start text-[24px]">Total</p>
+                <div className="grid w-fit">
+                    <p className="font-bold ml-[55%] text-[#1F1F1F] min-w-full text-[24px]">R$ 219,00</p>
+                    <p className="font-medium ml-[25%] text-[#8F8F8F] min-w-full text-[12px]">ou 10x de R$ 21,00 sem juros</p>
+                </div>
+            </div>
+            <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
+            <button type="submit" className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#F6AA1C] text-[#f5f5f5] rounded-lg hover:bg-[#ffb730] hover:transition-[2s]">
+                Realizar pagamento
+            </button></NavLink>
             </div>
         </div>
     )
