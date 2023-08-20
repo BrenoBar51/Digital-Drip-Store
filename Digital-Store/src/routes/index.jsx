@@ -10,8 +10,8 @@ import ComprarPage from "../pages/comprar/ComprarPage";
 
 export const router = createBrowserRouter([
     {
-    path: "/",
-    element: <Home />
+      path: "/",
+      element: <Home />
     },
     {
       path: "/productslist",
@@ -24,16 +24,17 @@ export const router = createBrowserRouter([
     {
       path: "/signup",
       element: <SignUpPage />
-   },
-   {
-     path: "/signupform",
-     element: <SignUpForm />
-  },
-  {
-    path: "/ProductPage",
-    element: <ProductPage />
- },
-    path: "/comprar",
-    element: <ComprarPage />
- }
+    },
+    {
+      path: "/signupform",
+      element: <SignUpForm />
+    },
+    {
+      path: "/ProductPage",
+      element: <ProductPage />
+    },
+    {
+      path: "/comprar",
+      element: <ComprarPage />
+    }
 ]);  
