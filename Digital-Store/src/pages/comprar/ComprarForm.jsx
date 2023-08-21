@@ -79,7 +79,7 @@ export default function ComprarForm(){
                     Realizar pagamento
                 </button></NavLink>
             </div>
-            <div className="h-fit mt-[10%] ml-[2%] p-[2%] space-y-[5%] bg-white">
+            <div className="h-fit mt-[10%] ml-[1%] p-[2%] space-y-[5%] bg-white">
                 <CardComprar />
             </div>
         </div>

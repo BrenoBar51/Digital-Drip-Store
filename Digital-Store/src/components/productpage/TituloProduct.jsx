@@ -32,7 +32,7 @@ export default function TituloProducts() {
           <div className="bg-[#5E5E5E] relative top-[70px] w-[31px] h-[31px] rounded-full"></div>
           <div className="bg-[#6D70B7]  relative top-[70px] w-[31px] h-[31px] rounded-full"></div>
           </div>
-          <NavLink to={'/comprar'} className={({isActive}) => (isActive ? '' : '')}>
+          <NavLink to={'/precompra'} className={({isActive}) => (isActive ? '' : '')}>
          <button className="bg-[#FFB31F] text-[#ffff] z-20 w-[153px] h-[48px] relative top-[100px] text-[16px] not-italic font-bold leading-[24px] tracking-[0.75px] text-center hover:bg-[#ff9f19] hover:text-[#fff] hover:duration-500 hover:ease-in-out duration-[1.4s]" >Comprar</button></NavLink>
         </div>
  
