@@ -6,6 +6,8 @@ import LoginPage from "../pages/Login/LoginPage";
 import SignUpForm from "../pages/SignUp/SignUpForm";
 import ProductPage from "../pages/Product-Page/ProductPage";
 import ComprarPage from "../pages/comprar/ComprarPage";
+import PreCompraPage from "../pages/PagePreCompra/PreCompra";
+import CompraRealizada from "../pages/CompraRealizada/CompraRealizada";
 
 
 export const router = createBrowserRouter([
@@ -36,5 +38,13 @@ export const router = createBrowserRouter([
   {
     path: "/comprar",
     element: <ComprarPage />
+  },
+  {
+    path: "/precompra",
+    element: <PreCompraPage />
+  },
+  {
+    path: "/comprafinalizada",
+    element: <CompraRealizada />
   }
 ]);  
