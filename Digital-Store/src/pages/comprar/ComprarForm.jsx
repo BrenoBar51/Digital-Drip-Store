@@ -74,7 +74,7 @@ export default function ComprarForm(){
                         </div>
                     </div>
                 </form>
-                <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
+                <NavLink to={'/comprafinalizada'} className={({isActive}) => (isActive ? '' : '')}>
                 <button type="submit" className="w-[100%] h-[40px] mt-[6%] flex-shrink-0 bg-[#F6AA1C] text-[#f5f5f5] rounded-lg hover:bg-[#ffb730] hover:transition-[2s]">
                     Realizar pagamento
                 </button></NavLink>
