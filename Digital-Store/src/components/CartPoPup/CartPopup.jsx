@@ -33,7 +33,7 @@ const togglePopup = () => {
             background: "white",
             boxShadow: "0 2px 4px rgba(0, 0, 0, 0.8)",
           }}
-          className="p-6 flex flex-col"
+          className="p-6 flex flex-col z-50"
         >
           <div className="w-full h-8 border-b-2  flex items-center pb-4">
                 <MicroTitle value3='Meu Carrinho' microtitu='h2s3'/>

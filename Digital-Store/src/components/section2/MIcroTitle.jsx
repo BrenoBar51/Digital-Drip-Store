@@ -10,8 +10,9 @@ export default function MicroTitle(props) {
                 ${props.microsubi === 'h2s4' && 'text-[#474747] text-[14px] not-italic font-normal leading-[24px] tracking-[0.75px]'} 
                 ${props.cardzint === 'h2s5' && 'text-[#474747] text-[16px] not-italic font-bold leading-[24px] opacity-90 tracking-[0.75px]'} 
                 ${props.traços === 'traço' && 'text-[#474747] text-[12px] text-center not-italic font-normal leading-[28px] opacity-40 tracking-[0.75px] line-through '} 
+                ${props.className && props.className}
            `}>
-                
+                {props.valuepedidos}
                 {props.value3}
                 {props.h2camisas}
            </h1>

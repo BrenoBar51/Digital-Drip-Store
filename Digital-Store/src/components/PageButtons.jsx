@@ -19,7 +19,12 @@ export default function PageButtons(){
                     </NavLink>
                 </li> 
                 <li className="cursor-pointer text-[#474747] font-bold hover:text-[#C92071] hover:underline">Categorias</li> 
-                <li className="cursor-pointer text-[#474747] font-bold hover:text-[#C92071] hover:underline">Meus Produtos</li>
+                    <li className="cursor-pointer text-[#474747] font-bold hover:text-[#C92071] hover:underline">
+                    <NavLink to='/meuspedidos' className={({isActive}) => (isActive ? 'text-[#c92071] underline' : '')}>
+                        Meus Produtos
+                    </NavLink>
+
+                    </li>
             </ul>
         </div>
     )

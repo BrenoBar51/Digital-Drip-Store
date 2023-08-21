@@ -11,6 +11,7 @@ export default function Buttons(props){
                 ${props.type2 === 'retangulo2' && 'w-[124px] h-[40px] text-[#ffffff] flex-shrink-0 bg-[#C92071]  rounded-lg hover:bg-[#991956] hover:transition-[2s]'}
                 ${props.edition === 'inverso' && 'rounded-lg bg-[#ffffff] text-[#c92071] z-20 w-[153px] h-[48px] absolute text-[16px] not-italic font-bold leading-[24px] tracking-[0.75px] text-center hover:bg-indigo-300 hover:text-[#fff] hover:duration-500 hover:ease-in-out duration-[1.4s]'}
                 ${props.linkbtn === 'btnlink' && 'text-[#c92071] bg-[#f9f8fe]'}
+                ${props.className && props.className}
             `}>
                 <NavLink to={'/login'} className={({isActive}) => (isActive ? '' : '')}>
                     {props.value2b1}
@@ -28,7 +29,7 @@ export default function Buttons(props){
                 <NavLink to={'/signup'} className={({isActive}) => (isActive ? 'min-w-full' : 'min-w-full')}>
                     {props.graybtnv}
                 </NavLink>
-                    
+                {props.texts}
             </button>
         </div>
     )
