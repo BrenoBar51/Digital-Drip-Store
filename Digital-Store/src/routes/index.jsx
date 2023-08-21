@@ -7,6 +7,8 @@ import SignUpForm from "../pages/SignUp/SignUpForm";
 import ProductPage from "../pages/Product-Page/ProductPage";
 import ComprarPage from "../pages/comprar/ComprarPage";
 import Meuspedidos from "../pages/Meus-pedidosPG/Meuspedidos";
+import PreCompraPage from "../pages/PagePreCompra/PreCompra";
+import CompraRealizada from "../pages/CompraRealizada/CompraRealizada";
 
 
 export const router = createBrowserRouter([
@@ -41,5 +43,13 @@ export const router = createBrowserRouter([
   {
     path: "/meuspedidos",
     element: <Meuspedidos />
+  },
+  {
+    path: "/precompra",
+    element: <PreCompraPage />
+  },
+  {
+    path: "/comprafinalizada",
+    element: <CompraRealizada />
   }
 ]);  
