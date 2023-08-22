@@ -35,7 +35,7 @@ export default function MainPreCompra(){
                         <div className="grid ml-[4%]">
                             <div className="flex space-x-[60%] mr-[70%]">
                                 <button className="h-fit min-w-full p-[10%] bg-white text-[#474747] border-[#CCCCCC] border-[1px] rounded">-</button>
-                                <p className="text-[12px] font-bold">1</p>
+                                <p className="text-[12px] mt-[30%] font-bold">1</p>
                                 <button className="h-fit min-w-full p-[10%] bg-white border-[1px] text-[#474747] bor-spacing-5 border-[#CCCCCC] rounded">+</button>
                             </div>
                             <p className="underline cursor-pointer text-[#474747]">Remover item</p>
