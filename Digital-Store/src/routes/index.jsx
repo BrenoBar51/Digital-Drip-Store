@@ -6,9 +6,10 @@ import LoginPage from "../pages/Login/LoginPage";
 import SignUpForm from "../pages/SignUp/SignUpForm"; 
 import ProductPage from "../pages/Product-Page/ProductPage"; 
 import ComprarPage from "../pages/comprar/ComprarPage"; 
-import Meuspedidos from "../pages/Meus-pedidosPG/Meuspedidos"; 
 import PreCompraPage from "../pages/PagePreCompra/PreCompra"; 
 import CompraRealizada from "../pages/CompraRealizada/CompraRealizada"; 
+import Meuspedidos from "../pages/Meus-pedidosPG/MInhas-Infos/Meuspedidos";
+import PedidosRoutes from "../pages/Meus-pedidosPG/Meus-PedidosROUTE/PedidosRoutes";
  
  
 export const router = createBrowserRouter([ 
@@ -51,5 +52,9 @@ export const router = createBrowserRouter([
   { 
     path: "/comprafinalizada", 
     element: <CompraRealizada /> 
-  } 
+  },
+  {
+    path: "/pedidosroutes",
+    element: <PedidosRoutes />
+  }
 ]);   

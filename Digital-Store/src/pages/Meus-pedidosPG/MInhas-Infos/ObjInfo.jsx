@@ -1,5 +1,5 @@
-import Buttons from "../../components/Buttons";
-import MicroTitle from "../../components/section2/MIcroTitle";
+import Buttons from "../../../components/Buttons";
+import MicroTitle from "../../../components/section2/MIcroTitle";
 import ParagrafosCM from "./ParagrafosCM";
 import UsersPedidos from "./UsersPedidos";
 
