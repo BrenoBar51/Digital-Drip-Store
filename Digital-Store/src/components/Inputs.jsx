@@ -9,6 +9,7 @@ export default function Input(props){
                 border-none
                 h-[60px]
                 relative
+                pl-3
                 ${props.className}
             `} 
             type={`${props.type}`}
