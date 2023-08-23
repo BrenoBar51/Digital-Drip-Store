@@ -4,9 +4,9 @@ import InputRadio from "./InputRadio";
 export default function SideBar(){
     return(
         <>
-        <div>
+        <div className="bg-white p-[10%]">
             <h2 className="w-20 font-bold text-base text-slate-950">Filtrar por</h2>
-            <hr className="mt-[5%] mb-[5%] w-60 "/>
+            <hr className="mt-[5%] mb-[5%] w-full "/>
             <p className="font-bold text-sm mb-[5%]">Marca</p>
             <ul>
                 <li className="flex gap-[1%] text-sm"><Checkbox /> Addidas</li>
@@ -30,8 +30,8 @@ export default function SideBar(){
             </ul>
             <p className="mt-[5%] mb-[5%] font-bold text-sm">Estado</p>
             <ul>
-                <li className="flex gap-[1%] text-sm"><InputRadio /> Novo</li>
-                <li className="flex gap-[1%] text-sm"><InputRadio/> Usado</li>
+                <li className="flex gap-[1%] text-sm"><InputRadio name={'estado'} /> Novo</li>
+                <li className="flex gap-[1%] text-sm"><InputRadio  name={'estado'} /> Usado</li>
             </ul>
         </div>
         </>

@@ -10,6 +10,7 @@ export default function ProductList() {
   return (
     <>
       <Header />
+    <div className="bg-[#F9F8FE]">
       <div className="flex justify-between items-center mx-[7%]">
         <Results/>
         <Select/>
@@ -35,6 +36,7 @@ export default function ProductList() {
         </div>
       </section>
       <Footer />
+    </div>
     </>
   );
 }
