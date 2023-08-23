@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 export function Card(props) {
   return (
-    <div className={`w-[292px] h-[439px] flex flex-col gap-3`}>
+    <div className={`w-[292px] h-[439px] flex flex-col gap-3 ml-[2%] mb-[1%]`}>
       <NavLink to={'/productPage'} className={({isActive}) => (isActive ? '' : '')}>
       <div
-        className={`w-full h-[320px] bg-white shadow-[#69626201] flex justify-center items-center relative cursor-pointer`}
+        className={`w-full h-[320px] bg-white shadow-[#69626201] flex justify-center items-center relative cursor-pointer `}
       >
         {props.isDiscount ? (
             <span className="absolute bg-[#E7FF86] top-5 left-5 px-4 py-1 justify-center items-center rounded-full text-sm font-bold text-[#474747]">{props.discountPercentual}% OFF</span>
@@ -14,7 +14,7 @@ export function Card(props) {
         )}
         <img src={props.url} alt="" />
       </div>
-      <div className='flex flex-col gap-1 cursor-pointer'>
+      <div className='flex flex-col gap-1 cursor-pointer mt-[5%]'>
         <span className='text-[#8F8F8F] font-bold leading-6 text-xs'>{props.category}</span>
         <p className='text-[#474747] text-2xl'>{props.productName}</p>
         <div className='flex gap-2 items-center'>
