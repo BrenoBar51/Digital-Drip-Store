@@ -16,7 +16,7 @@ export default function Main() {
                 <TitulosMain />
                 <Carrossel />
             </section>
-            <section className="w-full h-[730px] bg-[#F9F8FE]">
+            <section className="w-full min-h-[730px] bg-[#F9F8FE]">
                 <CardThree />
                 <ColectionCards />
             </section>

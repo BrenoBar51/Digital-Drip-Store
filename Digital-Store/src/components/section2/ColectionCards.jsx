@@ -7,10 +7,10 @@ export default function ColectionCards() {
             <div className="max-w-full h-[70px] flex items-center justify-center">
                 <MicroTitle value3='Coleções em destaques' h2s2pt2='h2s2'/>
             </div>
-            <div className=" gap-x-10 max-w-full h-[124px] flex justify-center ">
+            <div className="flex flex-wrap gap-10 min-h-[124px] justify-center">
                 <FiveCardsIcons Fcards='Five' icones='src\assets\image\tshirt-_1_.png' />
                 <FiveCardsIcons Fcards='Five' icones='src\assets\image\pants.png' />
-                <FiveCardsIcons Fcards='Five' icones='src\assets\image\pants.png' />
+                <FiveCardsIcons Fcards='Five' icones='src\assets\image\cap_icon-icons.com_59925.png' />
                 <FiveCardsIcons Fcards='Five' icones='src\assets\image\headphones_1.png' />
                 <FiveCardsIcons Fcards='Five' icones='src\assets\image\sneakers.png' />
             </div>
