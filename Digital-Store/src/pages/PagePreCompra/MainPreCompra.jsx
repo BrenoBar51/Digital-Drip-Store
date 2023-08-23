@@ -20,7 +20,7 @@ export default function MainPreCompra(){
                     </div> 
                     <hr className="mt-[1%] mb-[4%]"/> 
                     <div className="flex"> 
-                        <img className="w-[100px] h-[100px] bg-[#E2E3FF]" src="src\assets\image\6d839d9bc81eba71990cf69a20c77364.png" alt="" /> 
+                        <img className="w-[100px] h-[100px] bg-[#E2E3FF]" src="src\assets\image\White-Sneakers-PNG-Clipart 2.png" alt="" /> 
                         <div className="grid space-y-[4%]"> 
                             <p className="text-[#1F1F1F] w-full tracking-wider ml-[5%] font-bold text-[14px]">Tênis Nike Revolution 6 Next<br/>Nature Masculino</p> 
                             <div className="flex"> 
@@ -75,7 +75,7 @@ export default function MainPreCompra(){
                     <p className="font-bold text-[#474747] w-[306px] tracking-wide text-[24px]">Resumo</p> 
                     <hr className=""/> 
                     <div className="flex"> 
-                        <img className="w-[90px] h-[70px] bg-[#E2E3FF]" src="src\assets\image\6d839d9bc81eba71990cf69a20c77364.png" alt="" /> 
+                        <img className="w-[90px] h-[70px] bg-[#E2E3FF]" src="src\assets\image\White-Sneakers-PNG-Clipart 2.png" alt="" /> 
                         <p className="text-[#1F1F1F] w-full tracking-wider ml-[5%] font-bold text-[14px]">Tênis Nike Revolution 6 Next Nature<br/>Masculino</p> 
                 </div> 
                 <hr className=""/> 

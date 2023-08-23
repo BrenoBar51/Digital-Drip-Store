@@ -1,16 +1,15 @@
-
 import Footer from "../../Corpo/Footer";
 import { Card } from "../../components/Card";
-import NavBar from "../../components/NavBar";
 import { Select } from "../../components/Select";
 import { Results } from "../../components/Results";
 import SideBar from "../../components/SideBar";
 import { cardsInfo } from "../../utils/mocks/cardsInfo";
+import Header from "../../Corpo/Header";
 
 export default function ProductList() {
   return (
     <>
-      <NavBar />
+      <Header />
       <div className="flex justify-between items-center mx-[7%]">
         <Results/>
         <Select/>
