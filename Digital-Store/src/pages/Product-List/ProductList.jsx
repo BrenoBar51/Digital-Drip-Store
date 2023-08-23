@@ -10,15 +10,15 @@ export default function ProductList() {
   return (
     <>
       <Header />
-      <div className="flex justify-between items-center mx-[7%]">
-        <Results/>
+      <div className="flex flex-col justify-start sm:flex-row sm:justify-between sm:items-center mx-[7%]">
         <Select/>
+        <Results/>
       </div>
       <section className="flex mx-[7%] mb-28 mt-10 gap-1">
-        <aside className="w-[308px] h-[720px]">
+        <aside className="w-[308px] h-[720px] hidden sm:block">
           <SideBar />
         </aside>
-        <div className="flex justify-center flex-wrap w-[1200px]">
+        <div className="w-full grid gap-x-4 gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
             {cardsInfo.map((card) => {
                 return(
                     <Card 

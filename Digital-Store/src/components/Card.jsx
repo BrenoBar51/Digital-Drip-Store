@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 export function Card(props) {
   return (
-    <div className={`w-[292px] h-[439px] flex flex-col gap-3`}>
+    <div className={`max-h-[439px] max-w-[288px] flex flex-col gap-3 min-w-[163px] min-h-[264px]`}>
       <NavLink to={'/productPage'} className={({isActive}) => (isActive ? '' : '')}>
       <div
-        className={`w-full h-[320px] bg-white shadow-[#69626201] flex justify-center items-center relative cursor-pointer`}
+        className={` w-full max-h-[320px] bg-white shadow-[#69626201] flex justify-center items-center relative cursor-pointer`}
       >
         {props.isDiscount ? (
             <span className="absolute bg-[#E7FF86] top-5 left-5 px-4 py-1 justify-center items-center rounded-full text-sm font-bold text-[#474747]">{props.discountPercentual}% OFF</span>
