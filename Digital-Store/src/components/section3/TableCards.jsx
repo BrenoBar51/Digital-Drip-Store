@@ -10,16 +10,16 @@ export default function TableCards() {
 
     return (
         <>
-            <div className="max-w-full h-[1000px] flex flex-col mx-[5.9%] gap-y-6">
+            <div className="max-w-full min-h-[1000px] flex flex-col mx-[5.9%] gap-y-6">
                     <div className="w-[1200px] h-[26px] px-[8px] flex justify-between">
                         <MicroTitle value3='Produtos em alta' h2s2pt2='h2s2' />
                         <Buttons value3='Ver todos ->' linkbtn='btnlink'/>
                     </div>
                 <div className="w-[1200px] flex overflow-hidden  ">
-                    <div className="flex flex-wrap">
-                        {firstRow.map((card) => {
+                    <div className=" grid gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+                        {eightcard.map((card) => {
                             return(
-                                <div key={card.id} className="p-2" style={{ width: '300px' }}>
+                                <div key={card.id} className="p-2" style={{ width: '350px' }}>
                                     <Card 
                                         key={card.id} 
                                         discountPercentual={card.discountPercentual} 
@@ -31,23 +31,6 @@ export default function TableCards() {
                                         url={card.url} 
                                     />
                                     
-                                </div>
-                            )
-                        })}
-                    </div>
-                    <div className="flex flex-wrap">
-                        {secondRow.map((card) => {
-                            return(
-                                <div key={card.id} className="p-2" style={{ width: '300px' }}>
-                                    <Card 
-                                        discountPercentual={card.discountPercentual} 
-                                        category={card.category} 
-                                        productName={card.productName}
-                                        discountPrice={card.discountPrice}
-                                        price={card.price}
-                                        isDiscount={card.isDiscount}
-                                        url={card.url} 
-                                    />
                                 </div>
                             )
                         })}

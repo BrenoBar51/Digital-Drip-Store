@@ -1,13 +1,8 @@
-export default function AirJordan(){
-    return(
-        <div className=" ">
-            
-         
-           
-            <img className="w-[500px] relative top-96 left-28" src="src\assets\image\Ellipse11.png" alt="" />
-            <img className="w-[600px] relative  bottom-20 left-4" src="src\assets\image\Laye1.png" alt="AirJordan" />
-        
-        </div>
-        
+export default function AirJordan() {
+    return (
+        <>
+            <div className="w-[466px] h-[466px] flex items-center justify-center flex-shrink-0 rounded-[466px] bg-gradient-to-b from-[#a489f040]  to-[#fff] ">
+            </div>
+        </>
     )
 }

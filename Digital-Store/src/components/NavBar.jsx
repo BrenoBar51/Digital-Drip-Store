@@ -9,7 +9,7 @@ export default function NavBar(){
     return (
         <>
             <div className="bg-white justify-center">
-                <div className="ml-[5%] mt-[3%] flex gap-[4%] justify-center">
+                <div className="md:ml-[5%] md:mt-[3%] flex md:gap-[4%] justify-center">
                     <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
                         <Logo /> 
                     </NavLink>
@@ -19,7 +19,7 @@ export default function NavBar(){
                     <CartIcon />
                 </div>
             </div>
-            <div className="ml-[7%] mt-[4%] flex space-x-20 justify-start pb-[2%]">
+            <div className="md:ml-[7%] md:mt-[4%] flex flex-col md:flex-row  md:space-x-20 md:justify-start pb-[2%]">
                 <PageButtons />
             </div>
         </>

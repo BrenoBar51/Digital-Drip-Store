@@ -6,20 +6,20 @@ import ProdutosRela from "../../components/productpage/ProdutosRela";
 import TituloProducts from "../../components/productpage/TituloProduct";
 
 export default function ProductPage() {
-    return(
+    return (
         <div>
             <Header />
-            <div className="flex bg-[#F9F8FE] ">  <LocalPage /></div> 
-          <section className="flex w-full h-[750px]  bg-[#F9F8FE]">
-         
-            <ProductImage />
-        <div className="relative top-[39px]">    <TituloProducts /> </div>
-            </section> 
+            <div className="flex bg-[#F9F8FE] ">  <LocalPage /></div>
+            <section className="flex w-full h-[750px]  bg-[#F9F8FE]">
+
+                <ProductImage />
+                <div className="relative top-[39px]">    <TituloProducts /> </div>
+            </section>
             <section className="w-full h-[600px] bg-[#F9F8FE]">
-        <ProdutosRela />
-        <div>
-            
-        </div>
+                <ProdutosRela />
+                <div>
+
+                </div>
             </section>
             <Footer />
         </div>
