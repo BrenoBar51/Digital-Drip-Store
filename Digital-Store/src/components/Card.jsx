@@ -14,7 +14,7 @@ export function Card(props) {
         )}
         <img src={props.url} alt="" />
       </div>
-      <div className='flex flex-col gap-1 cursor-pointer'>
+      <div className='flex flex-col gap-1 cursor-pointer mt-[5%]'>
         <span className='text-[#8F8F8F] font-bold leading-6 text-xs'>{props.category}</span>
         <p className='text-[#474747] text-2xl'>{props.productName}</p>
         <div className='flex gap-2 items-center'>
