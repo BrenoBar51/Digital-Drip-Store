@@ -2,8 +2,8 @@ import NavBar from "../components/NavBar";
 
 export default function Header() {
     return (
-        <div>
+        <header className="">
             <NavBar />            
-        </div>
+        </header>
     )
 }
