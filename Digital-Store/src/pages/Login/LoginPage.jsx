@@ -5,7 +5,7 @@ import MainLogin from "./Main-Login";
 
 export default function LoginPage(){
     return(
-        <div>
+        <div className="min-w-fit max-w-[134.375rem]">
             <div className="ml-[7%] mt-[2%] mb-[2%] flex bg-white">
                 <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
                     <Logo />

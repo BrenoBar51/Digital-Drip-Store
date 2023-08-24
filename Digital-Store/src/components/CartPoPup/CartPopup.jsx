@@ -18,7 +18,7 @@ const togglePopup = () => {
   return (
         <div>
       <button onClick={togglePopup}>
-      <div className="cursor-pointer">
+      <div className="cursor-pointer mt-[60%]">
             <box-icon name='cart' color='#C92071'></box-icon>
         </div>
       </button>
@@ -26,14 +26,11 @@ const togglePopup = () => {
         <div
           style={{
             position: "absolute",
-            top: "90px",
-            left: "960px",
             width: "315px",
-            height: "454px",
             background: "white",
             boxShadow: "0 2px 4px rgba(0, 0, 0, 0.8)",
           }}
-          className="p-6 flex flex-col z-50"
+          className="p-6 left-[60rem] top-[5.625rem] flex flex-col z-50"
         >
           <div className="w-full h-8 border-b-2  flex items-center pb-4">
                 <MicroTitle value3='Meu Carrinho' microtitu='h2s3'/>
