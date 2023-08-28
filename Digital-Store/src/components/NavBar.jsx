@@ -14,7 +14,7 @@ export default function NavBar(){
                         <Logo /> 
                     </NavLink>
                     <SearchBar />
-                    <Buttons  graybtn='gray' graybtnv='cadastra-se'/>
+                    <Buttons  graybtn='gray' graybtnv='Cadastra-se'/>
                     <Buttons  value2='Entrar'/>
                     <CartIcon />
                 </div>
