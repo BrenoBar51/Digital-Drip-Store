@@ -7,8 +7,8 @@ import TitulosMain from "../components/TitulosMain";
 
 export default function Main() {
     return (
-        <main className="flex flex-col min-w-fit h-fit bg-[#F9F8FE] box-border">
-            <section className="flex flex-col md:flex-row w-full h-fit p-4 bg-[#f5f5f5]">
+        <main className="flex flex-col min-w-fit h-fit bg-Branco-Cinza box-border">
+            <section className="flex flex-col md:flex-row w-full h-fit p-4 bg-Branco-Cinza">
                 <div className="pl-[3%] md:w-fit md:ml-[0%] sm:ml-[0%] lg:ml-0">
                     <TitulosMain />
                 </div>
@@ -16,14 +16,14 @@ export default function Main() {
                     <Carrossel />
                 </div>
             </section>
-            <section className="w-full  bg-[#F9F8FE]">
+            <section className="w-full bg-Branco-Cinza">
                 <CardThree />
                 <ColectionCards />
             </section>
-            <section className="w-full bg-[#f9f8fe]">
+            <section className="w-full bg-Branco-Cinza">
                 <TableCards />
             </section>
-            <section className="w-full bg-[#fff]">
+            <section className="w-full bg-Branco-Cinza">
                 <AirJordanPage />
             </section>
         </main>

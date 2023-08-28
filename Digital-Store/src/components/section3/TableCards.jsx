@@ -1,41 +1,41 @@
 import { cardsInfo } from "../../utils/mocks/cardsInfo";
 import { Card } from "../Card";
-import  Buttons from "../Buttons";
+import Buttons from "../Buttons";
 import MicroTitle from "../section2/MIcroTitle";
 export default function TableCards() {
-    const eightcard = cardsInfo.slice(0, 8);
-    
-    const firstRow = eightcard.slice(0, 4);
-        const secondRow = eightcard.slice(4, 8);
+  const eightcard = cardsInfo.slice(0, 8);
 
-    return (
-        <>
-            <div className="max-w-full min-h-[1000px] flex flex-col mx-[5.9%] gap-y">
-                    <div className="w-full h-[26px] px-[8px] flex justify-between">
-                        <MicroTitle value3='Produtos em alta' h2s2pt2='h2s2' />
-                        <Buttons value3='Ver todos ->' linkbtn='btnlink'/>
-                    </div>
-                <div className="w-full flex overflow-hidden  ">
-                    <div className=" grid gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-                        {eightcard.map((card) => {
-                            return(
-                                <div key={card.id} className="p-2" style={{ width: '350px' }}>
-                                    <Card 
-                                        key={card.id} 
-                                        discountPercentual={card.discountPercentual} 
-                                        category={card.category} 
-                                        productName={card.productName}
-                                        discountPrice={card.discountPrice}
-                                        price={card.price}
-                                        isDiscount={card.isDiscount}
-                                        url={card.url} 
-                                    />
-                                    
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>              
-           </div>
-        </>
-)}
+  const firstRow = eightcard.slice(0, 4);
+  const secondRow = eightcard.slice(4, 8);
+
+  return (
+    <>
+      <div className="max-w-full min-h-[1000px] flex flex-col mx-[5.9%] gap-y">
+        <div className="w-full h-[26px] px-[8px] flex justify-between">
+          <MicroTitle value3="Produtos em alta" h2s2pt2="h2s2" />
+          <Buttons value3="Ver todos ->" linkbtn="btnlink" />
+        </div>
+        <div className="w-full flex overflow-hidden  ">
+          <div className=" grid gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+            {eightcard.map((card) => {
+              return (
+                <div key={card.id} className="p-2" style={{ width: "350px" }}>
+                  <Card
+                    key={card.id}
+                    discountPercentual={card.discountPercentual}
+                    category={card.category}
+                    productName={card.productName}
+                    discountPrice={card.discountPrice}
+                    price={card.price}
+                    isDiscount={card.isDiscount}
+                    url={card.url}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
