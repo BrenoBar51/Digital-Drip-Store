@@ -18,7 +18,7 @@ export default function NavBar(){
                     <SearchBar />
                 </div>
             </nav>
-            <div className="md:ml-[7%] md:mt-[4%] flex flex-col md:flex-row  md:space-x-20 md:justify-start pb-[2%]">
+            <div className="hidden md:ml-[7%] md:mt-[4%] md:flex flex-col md:flex-row  md:space-x-20 md:justify-start pb-[2%]">
                 <PageButtons />
             </div>
         </>
