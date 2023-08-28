@@ -9,10 +9,10 @@ export default function Main() {
     return (
         <main className="flex flex-col min-w-fit h-fit bg-[#F9F8FE] box-border">
             <section className="flex flex-col md:flex-row w-full h-fit p-4 bg-[#f5f5f5]">
-                <div className="ml-[3%] md:w-fit md:ml-[0%] sm:ml-[0%] lg:ml-0">
+                <div className="pl-[3%] md:w-fit md:ml-[0%] sm:ml-[0%] lg:ml-0">
                     <TitulosMain />
                 </div>
-                <div className="ml-[3%] md:w-fit md:ml-[0%] sm:ml-[0%] lg:ml-0">
+                <div className="md:w-fit md:ml-[0%] sm:ml-[0%] lg:ml-0">
                     <Carrossel />
                 </div>
             </section>
