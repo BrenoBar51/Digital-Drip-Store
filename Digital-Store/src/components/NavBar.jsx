@@ -14,11 +14,14 @@ export default function NavBar(){
                 <div className="flex items-center justify-center w-64  h-full">
                     <Logo />
                 </div>
-                <div className="flex md:w-[599px] md:gap-x-0 sm:gap-x-4">
+                <div className="flex md:w-[599px]   md:gap-x-0 sm:gap-x-4">
                     <SearchBar />
                     <div className="w-full md:hidden md:bg-[#ffffff] flex justify-end items-center h-full">
                         <img src="src\assets\image\Buy.png" className="md:w-[28px] md:h-[28px]" alt="" />
                     </div>
+                </div>
+                <div className="w-[100px] h-full justify-center pt-4 hidden md:flex">
+                    <img src="src\assets\image\Buy.png" className="md:w-[28px] md:h-[28px]" alt="" />
                 </div>
             </nav>
             <div className="hidden md:ml-[7%] md:mt-[4%] md:flex flex-col md:flex-row  md:space-x-20 md:justify-start pb-[2%]">
