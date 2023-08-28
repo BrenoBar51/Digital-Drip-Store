@@ -1,13 +1,9 @@
 import Carrossel from "../components/Carrossel";
-
 import CardThree from "../components/section2/CardsThree";
 import ColectionCards from "../components/section2/ColectionCards";
-
 import AirJordanPage from "../components/section 4/AirJordanPage";
 import TableCards from "../components/section3/TableCards";
 import TitulosMain from "../components/TitulosMain";
- 
-
 
 export default function Main() {
     return (
