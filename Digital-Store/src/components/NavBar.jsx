@@ -1,24 +1,23 @@
-import { Link, NavLink } from "react-router-dom";
-import Buttons from "./Buttons";
+import Input from "./Inputs";
 import Logo from "./Logo";
 import PageButtons from "./PageButtons";
 import SearchBar from "./SearchBar";
-import CartIcon from "./CartPoPup/CartPopup";
+
 
 export default function NavBar(){
     return (
         <>
-            <div className="bg-white min-w-fit justify-center">
-                <div className="md:ml-[2.5%] md:mt-[3%] flex md:gap-[4%] justify-center">
-                    <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
-                        <Logo /> 
-                    </NavLink>
-                    <SearchBar />
-                    <Buttons  graybtn='gray' graybtnv='cadastra-se'/>
-                    <Buttons  value2='Entrar'/>
-                    <CartIcon />
+            <nav className="w-full justify-around h-full p-8 px-24 ring-2 flex md:gap-x-7">
+                <div className="flex md:hidden w-12 h-full  items-start justify-center">
+                    <img src="src\assets\image\menu-regular-36.png" alt="" />                
                 </div>
-            </div>
+                <div className="flex items-center justify-center w-64  h-full">
+                    <Logo />
+                </div>
+                <div className="flex md:w-[560px]">
+                    <SearchBar />
+                </div>
+            </nav>
             <div className="md:ml-[7%] md:mt-[4%] flex flex-col md:flex-row  md:space-x-20 md:justify-start pb-[2%]">
                 <PageButtons />
             </div>

@@ -1,11 +1,13 @@
+
 export default function Input(props){
     return(
-        <div className="">
+        <div className="hidden md:w-full md:flex">
             <input className={`
-                min-w-full 
+                hidden md:flex
+                w-[559px] 
                 bg-gray-100 
                 font-normal
-                rounded-md
+                rounded-l-md
                 border-none
                 h-[60px]
                 relative
