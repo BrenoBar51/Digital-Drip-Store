@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 export default function NavBar(){
     return (
         <>
-            <nav className="w-full justify-around h-full p-8 px-24 ring-2 flex md:gap-x-7">
+            <nav className="w-full justify-around md:justify-normal h-full p-[20px] md:p-8 md:px-24 ring-2 flex md:gap-x-7">
                 <div className="flex md:hidden w-12 h-full  items-start justify-center">
                     <img src="src\assets\image\menu-regular-36.png" alt="" />                
                 </div>
