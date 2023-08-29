@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 export default function ConteudoCompraRealizada() {
   return (
-    <div className="bg-Branco relative left-[130px] top-[50px] h-[1400px] w-[1100px]">
+    <div className="bg-Branco relative pl-[12%] mt-[5%] h-fit w-fit">
       <section>
-        <div className="text-[150px] relative top-[20px] flex justify-center  ">🎉</div>
+        <div className="text-[150px] relative flex justify-center">🎉</div>
         <div className="flex justify-center font-bold ">
           <div className="text-[46px] relative left-[130px] font-bold">Compra Realizada</div>
           <div className="text-[46px] relative top-[70px] right-[220px] font-bold">
@@ -89,11 +89,11 @@ export default function ConteudoCompraRealizada() {
           ou 10x de R$ 21,00 sem juros
         </div>
       </div>
-      <div className="text-Cinza-light2 underline decoration-1 relative top-[380px] flex justify-center right-[20px] ">
+      <div className="text-Cinza-light2 underline decoration-1 relative top-[380px] flex justify-center pl-[10%] cursor-pointer">
         Imprimir Recibo
       </div>
       <NavLink to={"/"} className={({ isActive }) => (isActive ? "" : "")}>
-        <button className="bg-Amarelo text-Branco z-20 w-[1003px] h-[48px] relative top-[470px] text-[16px] not-italic font-bold leading-[24px] tracking-[0.75px] text-center left-[49px] rounded-[11px] hover:text-Branco hover:duration-500 hover:ease-in-out duration-[1.4s]">
+        <button className="bg-Amarelo text-Branco z-20 w-full h-[48px] relative top-[470px] text-[16px] not-italic font-bold leading-[24px] tracking-[0.75px] text-center left-[49px] rounded-[11px] hover:text-Branco hover:duration-500 hover:ease-in-out duration-[1.4s]">
           Voltar para Home
         </button>
       </NavLink>
