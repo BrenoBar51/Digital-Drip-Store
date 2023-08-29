@@ -1,15 +1,15 @@
-import Footer from "../../Corpo/Footer"
-import Header from "../../Corpo/Header"
-import ConteudoCompraRealizada from "../../components/paginacomprarealizada/ConteudoRealizado"
+import Footer from "../../Corpo/Footer";
+import Header from "../../Corpo/Header";
+import ConteudoCompraRealizada from "../../components/paginacomprarealizada/ConteudoRealizado";
 
 export default function CompraRealizada() {
-    return(
-        <div>
+  return (
+    <div>
       <Header />
-      <div className="w-full h-[1700px] bg-[#F9F8FE]"> 
-     <ConteudoCompraRealizada />
-     </div>
-     <Footer />
-        </div>
-    )
+      <div className="w-full h-[1700px] bg-Branco">
+        <ConteudoCompraRealizada />
+      </div>
+      <Footer />
+    </div>
+  );
 }

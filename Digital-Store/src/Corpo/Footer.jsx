@@ -7,7 +7,7 @@ import Informacoes from "../components/Informacoes";
 export default function Footer() {
   return (
     <>
-      <footer className="min-w-fit max-w-[134.375rem] bg-[#1F1F1F] flex flex-col">
+      <footer className="min-w-fit max-w-[134.375rem] bg-Cinza-Escuro flex flex-col">
         <div className="grid ml-[4%] mt-[10%] mr-[4%] grid-cols-4">
           <div className="col-span-1">
             <AboutUs />

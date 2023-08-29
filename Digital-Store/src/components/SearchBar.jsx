@@ -2,11 +2,13 @@ import Input from "../components/Inputs";
 
 export default function SearchBar(){
     return(
-        <div className="cursor-pointer relative sm:w-[16.3rem] md:w-[24.4rem] lg:w-[32.5rem]">
-            <Input type={'text'} placeholder={'Pesquisar produtos...'} />
-            <button className="absolute z-10 border-none bg-transparent outline-none top-4 right-2" type="submit">
-                <box-icon name='search' color='#9d9d9d' ></box-icon>
-            </button>
-        </div>
+        <>
+            <div className="cursor-pointer hidden md:flex md:w-[32.5rem] lg:w-[32.5rem]">
+                <Input type={'text'} placeholder={'Pesquisar produtos...'} />
+            </div>
+            <div className="cursor-pointer flex justify-start w-[40px] rounded-r-md md:bg-gray-100 gap-x-10 items-center md:items-center">
+                <img src="src\assets\image\Search.png" className="w-10 h-6 md:w-[18px] md:h-[19px]" alt="" />
+            </div>
+        </>
     )
 }

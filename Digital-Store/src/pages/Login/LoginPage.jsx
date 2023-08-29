@@ -5,9 +5,9 @@ import MainLogin from "./Main-Login";
 
 export default function LoginPage(){
     return(
-        <div className="min-w-fit max-w-[134.375rem]">
-            <div className="ml-[7%] mt-[2%] mb-[2%] flex bg-white">
-                <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
+        <div className="w-full h-full">
+            <div className=" p-8 w-[460px] px-[90px]  flex bg-white">
+                <NavLink to={'/'} className={({isActive}) => (isActive ? '' : 'flex gap-x-1 items-center justify-center')}>
                     <Logo />
                 </NavLink>
             </div>

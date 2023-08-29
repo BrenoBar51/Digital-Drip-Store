@@ -1,12 +1,9 @@
 import { cardsInfo } from "../../utils/mocks/cardsInfo";
 import { Card } from "../Card";
-import  Buttons from "../Buttons";
+import Buttons from "../Buttons";
 import MicroTitle from "../section2/MIcroTitle";
 export default function TableCards() {
-    const eightcard = cardsInfo.slice(0, 8);
-    
-    const firstRow = eightcard.slice(0, 4);
-        const secondRow = eightcard.slice(4, 8);
+  const eightcard = cardsInfo.slice(0, 8);
 
     return (
         <>

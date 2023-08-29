@@ -8,7 +8,7 @@ export default function ComprarPage(){
             <div>
                 <Header />
             </div>
-            <div className="bg-gradient-to-b from-[#F5F5F5] to-[#EFEFFF]">
+            <div className="bg-gradient-to-b from-Branco to-Lilás-Fade">
                 <ComprarForm />
             </div>
             <div>
