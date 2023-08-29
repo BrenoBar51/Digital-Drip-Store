@@ -11,7 +11,7 @@ export default function TableCards() {
     return (
         <>
             <div className="max-w-full min-h-[1000px] flex flex-col mx-[5.9%] gap-y-6">
-                    <div className="w-[1200px] h-[26px] px-[8px] flex justify-between">
+                    <div className="w-full h-full px-[8px] gap-x-5 md:gap-x-0 flex pt-20 md:pt-0 md:justify-between">
                         <MicroTitle value3='Produtos em alta' h2s2pt2='h2s2' />
                         <Buttons value3='Ver todos ->' linkbtn='btnlink'/>
                     </div>
