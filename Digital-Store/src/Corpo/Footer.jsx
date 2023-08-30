@@ -7,20 +7,12 @@ import Informacoes from "../components/Informacoes";
 export default function Footer() {
   return (
     <>
-      <footer className="min-w-fit max-w-[134.375rem] bg-Cinza-Escuro flex flex-col">
-        <div className="grid ml-[4%] mt-[10%] mr-[4%] grid-cols-4">
-          <div className="col-span-1">
-            <AboutUs />
-          </div>
-          <div className="row-span-3">
-            <Informacoes />
-          </div>
-          <div className="col-span-6s">
-            <Categorias />
-          </div>
-          <div className="col-span-2s">
-            <Contato />
-          </div>
+      <footer className="min-w-fit bg-Cinza-Escuro">
+        <div className="flex min-w-fit pt-[5%] pb-[4%] pl-[6%] gap-[11%]">
+          <AboutUs />
+          <Informacoes />
+          <Categorias />
+          <Contato />
         </div>
         <div>
           <Copyright />

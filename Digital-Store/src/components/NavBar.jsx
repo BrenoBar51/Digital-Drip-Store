@@ -3,15 +3,24 @@ import Logo from "./Logo";
 import PageButtons from "./PageButtons";
 import SearchBar from "./SearchBar";
 import CartPopup from "./CartPoPup/CartPopup"
+import MenuSide from "./MenuSide/MenuSide";
+import { useState } from "react";
 
-export default function NavBar() {
+function MenuPopup(props) {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
+  
   return (
     <>
       <nav className="w-full gap-x-24  items-center justify-evenly h-full p-[20px] md:p-8 md:px-12 flex md:gap-x-0">
-        <div className="flex md:hidden w-12 h-full  items-start justify-center">
+        <div onClick={togglePopup} className="flex md:hidden w-12 h-full  items-start justify-center">
           <img src="src\assets\image\menu-regular-36.png" alt="" />
         </div>
-        <div className="flex items-center justify-center w-64  h-full">
+        <div className="flex items-center justify-center min-w-fit  h-full">
           <Logo />
         </div>
         <div className="flex md:w-[599px]   md:gap-x-0 sm:gap-x-4">
@@ -28,9 +37,13 @@ export default function NavBar() {
           <CartPopup />          
         </div>
       </nav>
+      {(isPopupOpen &&
+          <MenuSide className={`${props.isPopupOpen && 'w-4/4 bg-[#00000050] fixed top-[73px] left-0 bottom-0 right-0 z-50'}`} />
+      )}
       <div className="w-full h-full p-8 px-28 md:flex hidden">
         <PageButtons />
       </div>
     </>
   );
 }
+export default MenuPopup;
