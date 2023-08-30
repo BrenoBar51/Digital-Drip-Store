@@ -6,7 +6,7 @@ import CartPopup from "./CartPoPup/CartPopup"
 import MenuSide from "./MenuSide/MenuSide";
 import { useState } from "react";
 
-function MenuPopup() {
+function MenuPopup(props) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const togglePopup = () => {
@@ -38,7 +38,7 @@ function MenuPopup() {
         </div>
       </nav>
       {(isPopupOpen &&
-        <MenuSide  />
+          <MenuSide className={`${props.isPopupOpen && 'w-4/4 bg-[#00000050] fixed top-[73px] left-0 bottom-0 right-0 z-50'}`} />
       )}
       <div className="w-full h-full p-8 px-28 md:flex hidden">
         <PageButtons />
