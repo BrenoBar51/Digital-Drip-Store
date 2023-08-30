@@ -7,11 +7,11 @@ import CartPopup from "./CartPoPup/CartPopup"
 export default function NavBar() {
   return (
     <>
-      <nav className="w-full gap-x-24  items-center justify-evenly h-full p-[20px] md:p-8 md:px-12 flex md:gap-x-0">
+      <nav className="w-full items-center justify-evenly h-full p-[20px] md:p-8 md:px-12 flex md:gap-x-0">
         <div className="flex md:hidden w-12 h-full  items-start justify-center">
           <img src="src\assets\image\menu-regular-36.png" alt="" />
         </div>
-        <div className="flex items-center justify-center w-64  h-full">
+        <div className="flex items-center justify-center min-w-fit  h-full">
           <Logo />
         </div>
         <div className="flex md:w-[599px]   md:gap-x-0 sm:gap-x-4">
