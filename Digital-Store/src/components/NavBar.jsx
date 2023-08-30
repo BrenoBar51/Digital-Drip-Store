@@ -3,12 +3,21 @@ import Logo from "./Logo";
 import PageButtons from "./PageButtons";
 import SearchBar from "./SearchBar";
 import CartPopup from "./CartPoPup/CartPopup"
+import MenuSide from "./MenuSide/MenuSide";
+import { useState } from "react";
 
-export default function NavBar() {
+function MenuPopup() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
+  
   return (
     <>
-      <nav className="w-full items-center justify-evenly h-full p-[20px] md:p-8 md:px-12 flex md:gap-x-0">
-        <div className="flex md:hidden w-12 h-full  items-start justify-center">
+      <nav className="w-full gap-x-24  items-center justify-evenly h-full p-[20px] md:p-8 md:px-12 flex md:gap-x-0">
+        <div onClick={togglePopup} className="flex md:hidden w-12 h-full  items-start justify-center">
           <img src="src\assets\image\menu-regular-36.png" alt="" />
         </div>
         <div className="flex items-center justify-center min-w-fit  h-full">
@@ -28,9 +37,13 @@ export default function NavBar() {
           <CartPopup />          
         </div>
       </nav>
+      {(isPopupOpen &&
+        <MenuSide  />
+      )}
       <div className="w-full h-full p-8 px-28 md:flex hidden">
         <PageButtons />
       </div>
     </>
   );
 }
+export default MenuPopup;

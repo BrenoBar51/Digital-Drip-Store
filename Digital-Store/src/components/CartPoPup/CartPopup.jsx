@@ -6,19 +6,14 @@ import Buttons from "../Buttons";
 function CartIcon() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  
-
- 
-
-
-const togglePopup = () => {
+  const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
   };
- 
+
   return (
-        <div>
+    <div>
       <button onClick={togglePopup}>
-      <div className="cursor-pointer w-[100px] h-full justify-center hidden md:flex">
+        <div className="cursor-pointer w-[100px] h-full justify-center hidden md:flex">
           <img src="src\assets\image\Buy.png" className="md:w-[28px] md:h-[28px]" alt="" />
         </div>
       </button>
@@ -33,27 +28,26 @@ const togglePopup = () => {
           className="p-6 left-[64rem] top-[6.425rem] flex flex-col z-50"
         >
           <div className="w-full h-8 border-b-2  flex items-center pb-4">
-                <MicroTitle value3='Meu Carrinho' microtitu='h2s3'/>
+            <MicroTitle value3="Meu Carrinho" microtitu="h2s3" />
           </div>
           <div className="w-full h-[250px] border-b-2 ">
-                <Cardzin />
-                <Cardzin />
+            <Cardzin />
+            <Cardzin />
           </div>
           <div className="w-full h-[93px] gap-y-1 mt-4 flex flex-col">
-                <div className="w-[267px] h-[30px] flex justify-between" >
-                    <MicroTitle h1cardzin='h1cdz' value3='Valor Total:' />
-                    <MicroTitle  color2='corh1s3' value3='R$ 219,00'/>    
-                </div>
-                <div className="w-[267px] h-[42px] flex justify-between ">
-                    <Buttons graybtn='gray' graybtnv='Esvaziar' />
-                    <Buttons  graybtnv='Ver carrinho' type2='retangulo2' />
-                    
-                </div>
+            <div className="w-[267px] h-[30px] flex justify-between">
+              <MicroTitle h1cardzin="h1cdz" value3="Valor Total:" />
+              <MicroTitle color2="corh1s3" value3="R$ 219,00" />
+            </div>
+            <div className="w-[267px] h-[42px] flex justify-between ">
+              <Buttons graybtn="gray" graybtnv="Esvaziar" />
+              <Buttons graybtnv="Ver carrinho" type2="retangulo2" />
+            </div>
           </div>
         </div>
       )}
     </div>
-  )
+  );
 }
 
 export default CartIcon;
