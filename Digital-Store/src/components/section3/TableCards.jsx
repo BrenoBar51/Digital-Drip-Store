@@ -10,10 +10,10 @@ export default function TableCards() {
             <div className="max-w-full min-h-[1000px] flex flex-col mx-[5.9%] gap-y-6">
                     <div className="w-full h-full px-[8px] gap-x-5 md:gap-x-0 flex pt-20 md:pt-0 md:justify-between">
                         <MicroTitle value3='Produtos em alta' h2s2pt2='h2s2' />
-                        <Buttons value3='Ver todos ->' linkbtn='btnlink'/>
+                        <Buttons value3='Ver todos ->' linkbtn='btnlink' className='!bg-Branco-gelo1'/>
                     </div>
-                <div className="w-[1200px] flex overflow-hidden  ">
-                    <div className=" grid gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+                <div className="w-full flex overflow-hidden  ">
+                    <div className="w-full sm:items-center grid gap-y-8 grid-rows-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
                         {eightcard.map((card) => {
                             return(
                                 <div key={card.id} className="p-2" style={{ width: '350px' }}>

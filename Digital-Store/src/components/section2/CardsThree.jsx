@@ -3,11 +3,11 @@ import ThreeCards from "./ThreeCards";
 
 export default function CardThree() {
   return (
-    <section className="min-h-[400px]  mx-[4%] pt-7 flex flex-col">
+    <section className="h-full py-7 flex justify-center md:items-start lg:items-center items-center flex-col">
       <MicroTitle color="corh1s2" value3="Coleções em destaque" />
       <div
         className={`
-                flex flex-col md:flex-row gap-4 min-h-[312px]  ml-[4%] mr-[4%] pt-7
+                w-full flex items-center flex-col md:flex-row justify-around min-h-[312px] gap-4 px-10  pt-7
 
             `}
       >

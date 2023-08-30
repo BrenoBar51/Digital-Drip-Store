@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'Branco-gelo1': '#F9F8FE',
         'Cinza-Escuro': '#1F1F1F',
         'Cinza-Escuro2':'#474747',
         'Cinza-light':'#666666',
