@@ -6,7 +6,7 @@ export default function CompraRealizada() {
   return (
     <div>
       <Header />
-      <div className="w-full h-[1700px] bg-Branco">
+      <div className="bg-Branco">
         <ConteudoCompraRealizada />
       </div>
       <Footer />

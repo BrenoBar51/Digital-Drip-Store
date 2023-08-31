@@ -1,7 +1,8 @@
-export default function OKButton(){ 
-    return( 
-        <div> 
-            <button className="  
+export default function OKButton() {
+  return (
+    <div>
+      <button
+        className="  
                 bg-gray-100  
                 rounded-md 
                 border-none 
@@ -10,7 +11,9 @@ export default function OKButton(){
                 font-extrabold 
                 relative 
                 text-[#C92071] 
-                ">OK</button> 
-        </div> 
-    ) 
-} 
+                ">
+                OK
+      </button>
+    </div>
+  );
+}
