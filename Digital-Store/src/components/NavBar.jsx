@@ -5,6 +5,7 @@ import SearchBar from "./SearchBar";
 import CartPopup from "./CartPoPup/CartPopup"
 import MenuSide from "./MenuSide/MenuSide";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function MenuPopup(props) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -21,7 +22,9 @@ function MenuPopup(props) {
           <img src="src\assets\image\menu-regular-36.png" alt="" />
         </div>
         <div className="flex items-center justify-center min-w-fit  h-full">
-          <Logo />
+          <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
+            <Logo />
+          </NavLink>
         </div>
         <div className="flex md:w-[599px]   md:gap-x-0 sm:gap-x-4">
           <SearchBar />

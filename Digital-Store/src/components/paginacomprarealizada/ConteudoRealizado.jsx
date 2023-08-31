@@ -11,7 +11,7 @@ export default function ConteudoCompraRealizada() {
             com sucesso!
           </div>
         </div>
-        <hr className="text-Cinza-Branco  w-[1000px] w-[100%] ml-[5%] mt-[10%] font-extrabold" />
+        <hr className="text-Cinza-Branco w-[100%] ml-[5%] mt-[10%] font-extrabold" />
       </section>
       <div className="ml-[5%]">
         <h1 className="text-Cinza-Escuro2 font-semibold ml-[%] mt-[2%] ">
