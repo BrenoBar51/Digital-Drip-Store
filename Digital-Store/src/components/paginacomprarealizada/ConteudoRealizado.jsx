@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function ConteudoCompraRealizada() {
   return (
     <div className="bg-Branco relative pl-[23%] mt-[5%] h-fit w-fit">
-      <section>
+      <section className="h-fit">
         <div className="text-[150px] md:text-[200px] relative flex justify-center md:flex-shrink-0 ">
           🎉
         </div>
@@ -49,7 +49,7 @@ export default function ConteudoCompraRealizada() {
           Tênis Nike Revolution 6 Next <br /> Nature Masculino
         </h1>
       </div>
-      <div className="flex gap-[50%] justify-center bg-[#F6AA1C26] min-w-full ring-4 ring-[#f6aa1c4b] rounded ">
+      <div className="flex gap-[57%] mt-[5%] ml-[5%] pl-[1%] justify-start bg-[#F6AA1C26] min-w-full ring-4 ring-[#f6aa1c4b] rounded ">
         <p className="text-[30px] relative font-bold ">Total</p>
         <div className="grid">
           <p className="text-[30px] font-bold flex justify-end relative ">
@@ -60,11 +60,11 @@ export default function ConteudoCompraRealizada() {
         </p>
         </div>
       </div>
-      <div className="text-Cinza-light2 underline decoration-1 relative flex justify-center pl-[10%] py-[5%] cursor-pointer">
+      <p className="text-Cinza-light2 underline decoration-1 relative flex justify-center pl-[10%] py-[5%] cursor-pointer">
         Imprimir Recibo
-      </div>
-      <NavLink to={"/"} className={({ isActive }) => (isActive ? "" : "")}>
-        <button className="bg-Amarelo text-Branco z-20 w-full ml-[5%] h-[48px] relative text-[16px] not-italic font-bold leading-[24px] tracking-[0.75px] text-center rounded-[11px] hover:text-Branco hover:duration-500 hover:ease-in-out duration-[1.4s]">
+      </p>
+      <NavLink to={"/"} className={({ isActive }) => (isActive ? '' : '')}>
+        <button className="bg-Amarelo text-Branco mb-[12%] z-20 w-full ml-[5%] h-[48px] relative text-[16px] not-italic font-bold leading-[24px] tracking-[0.75px] text-center rounded-[11px] hover:text-Branco hover:duration-500 hover:ease-in-out duration-[1.4s]">
           Voltar para Home
         </button>
       </NavLink>
