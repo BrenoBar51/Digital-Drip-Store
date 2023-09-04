@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Buttons(props){
     return(
-        <div className="flex gap-[10%]">
+        <div className="flex min-w-fit gap-[10%]">
             <button className={`
                 ${props.graybtn === 'gray' && 'text-Cinza-Escuro2 text-[14px] font-medium leading-[22px] tracking-[0.25px] underline'}
                 ${props.value2 === 'Entrar' && 'text-Branbg-Branco w-[114px] h-[40px] flex-shrink-0 bg-Rosa mt-[8%] rounded-lg hover:bg-Roxo hover:transition-[2s]'}
