@@ -4,7 +4,7 @@ import Buttons from '../Buttons'
 export default function ThreeCards(props) {
     return (
         <>
-                <div className={` ${props.cardS2 === 'ajustes' && 'rounded-[8px] w-[405px] h-[251px] bg-[#D8E3F2] relative box-border overflow-hidden'}`}>
+                <div className={` ${props.cardS2 === 'ajustes' && 'rounded-[8px] w-[385px] h-[241px] bg-[#D8E3F2] relative box-border overflow-hidden'}`}>
                     <img className={`${props.imgs === 'imgShop' && 'rotate-[-19deg] left-[160px] top-[55px] flex justify-end w-[355.679px] h-[300px] absolute  left-2"'}
                         ${props.imgs2 === 'mod2' && 'left-[120px] absolute'}
                         ${props.img3 === 'mod3' && 'left-[180px] top-[30px] rotate-[24deg] w-[222px] h-[262px] absolute'}
