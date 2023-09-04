@@ -9,10 +9,10 @@ export default function PedidosRoutes() {
     return (
         <>
             <Header />
-            <section className="w-auto h-[855px]  flex justify-center py-16 bg-[#F9F8FE] ">
-                <div className="h-[480px] w-[1290px] flex  ml-[99px] mr-[101px] gap-x-[16px]">
+            <section className="w-auto h-[855px]  flex justify-center py-16 bg-[#F9F8FE] box-border flex-shrink-0 flex-wrap">
+                <div className="h-[480px] w-[1290px] flex ml-[99px] mr-[101px] gap-x-[16px]">
                     <div className="
-                        w-[334px] h-[288px]  bg-[#fff] rounded-[4px] p-[30px]  flex flex-col items-start gap-[20px]"
+                        w-[334px] h-[288px]  bg-[#fff] rounded-[4px] p-[30px] hidden md:flex flex-col items-start gap-[20px]"
                         >
                             <MicroTitle microsubi='h2s4' value3='Meu Perfil ' className='!font-bold leading-[22px] tracking-[.25px] border-b-2 h-16  w-full border-[#ccc] cursor-pointer' />
                             <NavLink  to='/pedidosroutes' className={({IsActive}) => (IsActive ? '' : 'font-bold text-[#c92071] not-italic leading-[22px] border-b-2 h-16  w-full tracking-[0.25px] border-[#ccc] cursor-pointer')}>
@@ -23,8 +23,8 @@ export default function PedidosRoutes() {
                             </NavLink>            
                             <MicroTitle microsubi='h2s4' value3='Métodos de Pagamentos ' className='!font-medium tracking-[0.25px] border-b-2 border-[#ccc]  h-16  w-full cursor-pointer' />
                     </div>
-                    <section className="w-[890px] bg-[#fff] flex flex-col p-[30px] h-[649px]">
-                         <div className="w-[830px] h-[62px] flex items-center justify-between border-b-2 border-b-[#ccc]">
+                    <section className="w-[890px] bg-[#fff] flex flex-col p-[30px] h-[700px]">
+                         <div className="w-full h-[62px] flex py-4 items-center justify-between border-b-2 border-b-[#ccc]">
                             <MicroTitle microtitu='h2s3' value3='Meus Pedidos'  />
                             <MicroTitle microtitu='h2s3' value3='STATUS' className='!text-[14px] font-medium' />
                         </div>

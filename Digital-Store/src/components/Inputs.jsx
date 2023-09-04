@@ -1,10 +1,10 @@
-
-export default function Input(props){
-    return(
-        <div className="hidden md:w-full md:flex">
-            <input className={`
+export default function Input(props) {
+  return (
+    <div className="hidden md:w-full md:flex">
+      <input
+        className={`
                 hidden md:flex
-                w-[559px] 
+                min-w-full 
                 bg-gray-100 
                 font-normal
                 rounded-l-md
@@ -13,13 +13,13 @@ export default function Input(props){
                 relative
                 pl-3
                 ${props.className}
-            `} 
-            type={`${props.type}`}
-            placeholder={`      ${props.placeholder}`}
-            value={props.value}
-            name={props.name}
-            id={props.id}
-            />
-        </div>
-    )
+            `}
+        type={`${props.type}`}
+        placeholder={`      ${props.placeholder}`}
+        value={props.value}
+        name={props.name}
+        id={props.id}
+      />
+    </div>
+  );
 }

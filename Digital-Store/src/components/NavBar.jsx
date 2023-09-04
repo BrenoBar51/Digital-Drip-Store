@@ -7,7 +7,7 @@ import MenuSide from "./MenuSide/MenuSide";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function MenuPopup() {
+function MenuPopup(props) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const togglePopup = () => {
@@ -17,7 +17,7 @@ function MenuPopup() {
   
   return (
     <>
-      <nav className="w-full gap-x-24  items-center justify-evenly h-full p-[20px] md:p-8 md:px-12 flex md:gap-x-0">
+      <nav className="w-full gap-x-[20%] items-center justify-start h-full p-[20px] md:p-8 md:pl-[4.5%] flex md:gap-x-[1%]">
         <div onClick={togglePopup} className="flex md:hidden w-12 h-full  items-start justify-center">
           <img src="src\assets\image\menu-regular-36.png" alt="" />
         </div>
@@ -41,9 +41,9 @@ function MenuPopup() {
         </div>
       </nav>
       {(isPopupOpen &&
-        <MenuSide  />
+          <MenuSide className={`${props.isPopupOpen && 'w-4/4 bg-[#00000050] fixed top-[73px] left-0 bottom-0 right-0 z-50'}`} />
       )}
-      <div className="w-full h-full p-8 px-28 md:flex hidden">
+      <div className="w-full h-full p-8 px-[4.5%] md:flex hidden">
         <PageButtons />
       </div>
     </>
