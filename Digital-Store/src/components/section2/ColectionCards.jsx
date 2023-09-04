@@ -1,5 +1,6 @@
 import FiveCardsIcons from "./FiveCardsIcons";
 import MicroTitle from "./MIcroTitle";
+import img from '../../assets/image/tshirt-_1_.png'
 
 export default function ColectionCards() {
     return (
@@ -9,11 +10,11 @@ export default function ColectionCards() {
                 <MicroTitle value3='Coleções em destaques' h2s2pt2='h2s2'/>
             </div>
             <div className="flex gap-x-12 md:flex-row ">
-                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Camisetas' icones='src\assets\image\tshirt-_1_.png' />
-                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Calças' icones='src\assets\image\pants.png' />
-                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Bonés' icones='src\assets\image\cap_icon-icons.com_59925.png' />
-                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='HeadPhones' icones='src\assets\image\headphones_1.png' />
-                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Tênis' icones='src\assets\image\sneakers.png' />
+                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Camisetas' icones={img} />
+                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Calças' icones='../../assets/image/pants.png' />
+                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Bonés' icones='../../assets/image/cap_icon-icons.com_59925.png' />
+                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='HeadPhones' icones='../../assets/image/headphones_1.png' />
+                <FiveCardsIcons Fcards='Five' titulos='h1' valor3='Tênis' icones='../../assets/image/sneakers.png' />
             </div>
         </section>
         </>
