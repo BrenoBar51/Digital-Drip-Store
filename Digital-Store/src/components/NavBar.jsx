@@ -17,7 +17,7 @@ function MenuPopup(props) {
   
   return (
     <>
-      <nav className="w-full gap-x-[20%] items-center justify-start h-full p-[20px] md:p-8 md:pl-[4.5%] flex md:gap-x-[1%]">
+      <nav className="w-full gap-x-[20%] items-center justify-start  bg-white  md:h-full p-[20px] md:p-8 md:pl-[4.5%] flex md:gap-x-[1%]">
         <div onClick={togglePopup} className="flex md:hidden w-12 h-full  items-start justify-center">
           <img src="src\assets\image\menu-regular-36.png" alt="" />
         </div>
@@ -41,7 +41,7 @@ function MenuPopup(props) {
         </div>
       </nav>
       {(isPopupOpen &&
-          <MenuSide className={`${props.isPopupOpen && 'w-4/4 bg-[#00000050] fixed top-[73px] left-0 bottom-0 right-0 z-50'}`} />
+          <MenuSide  />
       )}
       <div className="w-full h-full p-8 px-[4.5%] md:flex hidden">
         <PageButtons />
