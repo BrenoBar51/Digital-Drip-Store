@@ -5,7 +5,7 @@ import MicroTitle from "../section2/MIcroTitle";
 export default function MenuSide() {
     return (
         <>
-            <div className="w-[340px] block h-[740px] p-8 z-50 absolute bg-Branco rounded">
+            <div className="w-[340px] block h-[740px] p-8 z-50 bg-Branco rounded">
                 <MicroTitle microtitu="h2s3" value3="Páginas" className="!py-4 !text-[18px]" />
                 <div className="w-full h-[510px] border-b-2 border-b-[#ccc] ">
                     <PageButtons className="!flex !flex-col !gap-2" />

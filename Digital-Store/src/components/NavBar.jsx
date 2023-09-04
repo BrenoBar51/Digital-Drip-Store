@@ -4,6 +4,7 @@ import PageButtons from "./PageButtons";
 import SearchBar from "./SearchBar";
 import CartPopup from "./CartPoPup/CartPopup"
 import MenuSide from "./MenuSide/MenuSide";
+import img from '../assets/image/menu-regular-36.png'
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -17,9 +18,9 @@ function MenuPopup(props) {
   
   return (
     <>
-      <nav className="w-full gap-x-[20%] items-center justify-start h-full p-[20px] md:p-8 md:pl-[4.5%] flex md:gap-x-[1%]">
+      <nav className="w-full gap-x-[20%] items-center justify-start h-full p-[20px] md:p-8 md:pl-[4.5%] flex md:gap-x-[2%]">
         <div onClick={togglePopup} className="flex md:hidden w-12 h-full  items-start justify-center">
-          <img src="src\assets\image\menu-regular-36.png" alt="" />
+          <img src={img} alt="" />
         </div>
         <div className="flex items-center justify-center min-w-fit  h-full">
           <NavLink to={'/'} className={({isActive}) => (isActive ? '' : '')}>
