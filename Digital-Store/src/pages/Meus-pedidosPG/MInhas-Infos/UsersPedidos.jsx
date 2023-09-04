@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function UsersPedidos() {
     const [nome, setNome] = useState("Antony Kleber Lima")
     const [CPF, setCPF] = useState("093.124.764.87")
-    const [email, setEmail] = useState("TalyssonLoucuras@gaymail.com")
+    const [email, setEmail] = useState("Antonykleber@devcoll.com.br")
     const [cell, setCell] = useState("(85) 4002-8922")
     const [adress, setAdress] = useState("Rua João Pessoa, 333")
     const [Bairro, setBairro] = useState("Centro")
