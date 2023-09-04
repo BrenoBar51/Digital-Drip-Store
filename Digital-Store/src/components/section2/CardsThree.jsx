@@ -7,7 +7,7 @@ export default function CardThree() {
       <MicroTitle color="corh1s2" value3="Coleções em destaque" />
       <div
         className={`
-                w-full flex items-center flex-col md:flex-row justify-around min-h-[312px] gap-4 px-10  pt-7
+                w-full flex items-center flex-col md:flex-row justify-around min-h-[312px] gap-4 px-[3%] pt-7
 
             `}
       >
