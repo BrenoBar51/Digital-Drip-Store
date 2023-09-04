@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MicroTitle from "../section2/MIcroTitle";
 import Cardzin from "./Cardzin";
 import Buttons from "../Buttons";
+import img from '../assets/image/Buy.png'
 
 function CartIcon() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -14,7 +15,7 @@ function CartIcon() {
     <div>
       <button onClick={togglePopup}>
         <div className="cursor-pointer w-[100px] h-full justify-center hidden md:flex">
-          <img src="src\assets\image\Buy.png" className="md:w-[28px] md:h-[28px]" alt="" />
+          <img src={img} className="md:w-[28px] md:h-[28px]" alt="" />
         </div>
       </button>
       {isPopupOpen && (

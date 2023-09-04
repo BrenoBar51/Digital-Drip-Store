@@ -1,4 +1,5 @@
 import Input from "../components/Inputs";
+import img from '../assets/image/Search.png'
 
 export default function SearchBar(){
     return(
@@ -7,7 +8,7 @@ export default function SearchBar(){
                 <Input type={'text'} placeholder={'Pesquisar produtos...'} />
             </div>
             <div className="cursor-pointer flex justify-start w-[40px] rounded-r-md md:bg-gray-100 gap-x-10 items-center md:items-center">
-                <img src="src\assets\image\Search.png" className="w-10 h-6 md:w-[18px] md:h-[19px]" alt="" />
+                <img src={img} className="w-10 h-6 md:w-[18px] md:h-[19px]" alt="" />
             </div>
         </>
     )
