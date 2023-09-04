@@ -9,6 +9,7 @@ export default {
       colors: {
         'Branco-gelo1': '#F9F8FE',
         'Cinza-Escuro': '#1F1F1F',
+        'Azul-Claro': '#4200ff40',
         'Cinza-Escuro2':'#474747',
         'Cinza-light':'#666666',
         'Cinza-light2':'#8F8F8F',
