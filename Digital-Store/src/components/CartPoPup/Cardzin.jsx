@@ -1,5 +1,5 @@
 import MicroTitle from "../section2/MIcroTitle";
-import img from '../assets/image/CardTenisForIN.png'
+import img from '../../assets/image/CardTenisForIN.png'
 
 export default function() {
     return (
