@@ -63,7 +63,7 @@ export default function ConteudoCompraRealizada() {
       <p className="text-Cinza-light2 underline decoration-1 relative flex justify-center pl-[10%] py-[5%] cursor-pointer">
         Imprimir Recibo
       </p>
-      <NavLink to={"/"} className={({ isActive }) => (isActive ? '' : '')}>
+      <NavLink to={'/'} className={({ isActive }) => (isActive ? '' : '')}>
         <button className="bg-Amarelo text-Branco mb-[12%] z-20 w-full ml-[5%] h-[48px] relative text-[16px] not-italic font-bold leading-[24px] tracking-[0.75px] text-center rounded-[11px] hover:text-Branco hover:duration-500 hover:ease-in-out duration-[1.4s]">
           Voltar para Home
         </button>
