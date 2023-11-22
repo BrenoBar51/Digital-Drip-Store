@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS users(
 CREATE TABLE IF NOT EXISTS reviews(
     review_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     review_rate INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
     review_text VARCHAR(255) NULL,
     review_status INTEGER DEFAULT 1,
     FOREIGN KEY (user_id) REFERENCES users (user_id)
