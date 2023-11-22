@@ -31,6 +31,10 @@ CREATE TABLE IF NOT EXISTS users(
     user_status INTEGER DEFAULT 1
 );
 
+ALTER TABLE users ADD (
+    user_email VARCHAR(255) NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS reviews(
     review_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     review_rate INTEGER NOT NULL,
