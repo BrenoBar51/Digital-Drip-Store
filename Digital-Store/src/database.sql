@@ -26,23 +26,23 @@ CREATE TABLE IF NOT EXISTS categories(
     category_status INTEGER DEFAULT 1
 );
 
-INSERT INTO categories (category_name) VALUES (
-    category_name ('Tênis'),
-    category_name ('Camisetas'),
-    category_name ('Calças'),
-    category_name ('Bonés'),
-    category_name ('Headphones'),
-    category_name, category_status ('Bolsas'), (0)
-);
+INSERT INTO categories (category_name, category_status)
+VALUES
+('Tênis', 1),
+('Camisetas', 1),
+('Calças', 1),
+('Bonés', 1),
+('Headphones', 1),
+('Bolsas', 0);
 
 CREATE TABLE IF NOT EXISTS users(
     user_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     user_name VARCHAR(20) NOT NULL,
-    user_status INTEGER DEFAULT 1
+    user_status INTEGER DEFAULT 1,
+    user_email VARCHAR(255) NOT NULL,
 );
 
 ALTER TABLE users ADD (
-    user_email VARCHAR(255) NOT NULL,
     user_fone INTEGER NOT NULL,
     user_data_nasc DATE NOT NULL
 );
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS products(
     product_image BLOB(100) NULL,
     product_discount INTEGER NOT NULL,
     product_price FLOAT NOT NULL,
-    product_sizes VARCHAR NULL,
+    product_sizes VARCHAR(50) NULL,
     product_name VARCHAR(20) NOT NULL,
     product_discription VARCHAR(255) NULL,
     product_category VARCHAR(10) NOT NULL,
