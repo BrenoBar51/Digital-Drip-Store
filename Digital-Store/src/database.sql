@@ -40,12 +40,26 @@ CREATE TABLE IF NOT EXISTS users(
     user_name VARCHAR(20) NOT NULL,
     user_status INTEGER DEFAULT 1,
     user_email VARCHAR(255) NOT NULL,
+    user_fone INTEGER NOT NULL,
+    user_data_nasc DATE NOT NULL
 );
+
+INSERT INTO users (user_name, user_status, user_email, user_fone, user_data_nasc)
+VALUES
+('Breno', 1, 'breno@gmail.com', '85988888888', '2004-09-02'),
+('José', 1, 'jose@gmail.com', '85988888877', '2000-09-02'),
+('Maria', 1, 'maria@gmail.com', '85988888866', '1993-09-02'),
+('João', 1, 'joao@gmail.com', '85988888855', '1984-09-02'),
+('Antônio', 1, 'antonio@gmail.com', '85988888844', '1999-09-02'),
+('Rodrigo', 0, 'rodrigo@gmail.com', '85988888833', '2006-09-02'),
+('Eduardo', 0, 'edu@gmail.com', '85988888822', '1888-09-02');
 
 ALTER TABLE users ADD (
     user_fone INTEGER NOT NULL,
     user_data_nasc DATE NOT NULL
 );
+
+ALTER TABLE users MODIFY COLUMN user_fone BIGINT NOT NULL;
 
 CREATE TABLE IF NOT EXISTS reviews(
     review_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
