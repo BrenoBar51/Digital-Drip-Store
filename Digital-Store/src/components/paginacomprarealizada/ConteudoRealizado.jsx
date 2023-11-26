@@ -42,7 +42,7 @@ export default function ConteudoCompraRealizada() {
       <div className="flex ml-[5%] mt-[4%] gap-4">
         <img
           className="w-[71.17px] h-[58px] shrink-0 rounded-[2.6px] bg-Lilás "
-          src="src\assets\image\CardTenisForIN.png"
+          src="src/assets/image/CardTenisForIN.png"
           alt=""
         />
         <h1 className="text-Cinza-Escuro text-[20px] font-bold  ">
