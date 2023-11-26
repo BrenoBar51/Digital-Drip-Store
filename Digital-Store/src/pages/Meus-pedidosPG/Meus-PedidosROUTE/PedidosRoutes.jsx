@@ -9,8 +9,8 @@ export default function PedidosRoutes() {
     return (
         <>
             <Header />
-            <section className="w-auto h-[855px]  flex justify-center py-16 bg-[#F9F8FE] box-border flex-shrink-0 flex-wrap">
-                <div className="h-[480px] w-[1290px] flex ml-[99px] mr-[101px] gap-x-[16px]">
+            <section className="min-w-fit h-[855px]  flex justify-center py-16 bg-[#F9F8FE] box-border flex-shrink-0 flex-wrap">
+                <div className="h-[480px] w-[1290px] flex ml-[3.2rem] gap-x-[16px]">
                     <div className="
                         w-[334px] h-[288px]  bg-[#fff] rounded-[4px] p-[30px] hidden md:flex flex-col items-start gap-[20px]"
                         >
@@ -44,7 +44,6 @@ export default function PedidosRoutes() {
                             })}
                         </div>
                     </section>
-                        
                 </div>
             </section>   
             <Footer />

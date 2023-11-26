@@ -15,9 +15,15 @@ export default function AboutUs() {
         </p>
       </div>
       <div className="flex pt-[10%] relative gap-[8%]">
-        <box-icon name="facebook" type="logo" color="#ffffff"></box-icon>
-        <box-icon name="instagram" type="logo" color="#ffffff"></box-icon>
-        <box-icon name="twitter" type="logo" color="#ffffff"></box-icon>
+        <button>
+          <box-icon name="facebook" type="logo" color="#ffffff"></box-icon>
+        </button>
+        <button>
+          <box-icon name="instagram" type="logo" color="#ffffff"></box-icon>
+        </button>
+        <button>
+          <box-icon name="twitter" type="logo" color="#ffffff"></box-icon>
+        </button>
       </div>
     </div>
   );

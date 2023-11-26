@@ -1,27 +1,28 @@
 import Footer from "../../Corpo/Footer";
 import Header from "../../Corpo/Header";
 import ProductImage from "../../components/productpage/Product-image";
-import LocalPage from "../../components/productpage/ProductPageLocal";
 import ProdutosRela from "../../components/productpage/ProdutosRela";
 import TituloProducts from "../../components/productpage/TituloProduct";
 
 export default function ProductPage() {
     return (
-        <div>
+        <>
             <Header />
-            <div className="flex bg-[#F9F8FE] ">  <LocalPage /></div>
-            <section className="flex w-full h-[750px]  bg-[#F9F8FE]">
-
+            <div className="flex w-full bg-Branco-gelo1 ">
+                <div className="ml-[4.5%] mt-6">
+                <h1 className="">Home / Produtos / Tênis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</h1>
+            </div>
+            </div>
+            <div className="flex w-full h-[750px]  bg-Branco-gelo1">
                 <ProductImage />
-                <div className="relative top-[39px]">    <TituloProducts /> </div>
-            </section>
-            <section className="w-full h-[600px] bg-[#F9F8FE]">
-                <ProdutosRela />
-                <div>
-
+                <div className="relative mt-[2%] ml-[7%]">
+                    <TituloProducts />
                 </div>
-            </section>
+            </div>
+            <div className="w-full h-[600px] bg-Branco-gelo1">
+                <ProdutosRela />
+            </div>
             <Footer />
-        </div>
+        </>
     )
 }
