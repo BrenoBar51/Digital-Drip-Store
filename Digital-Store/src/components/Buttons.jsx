@@ -25,7 +25,7 @@ export default function Buttons(props){
                 <NavLink to={'/productslist'} className={({isActive}) => (isActive ? '' : '')}>
                     {props.value3b1}
                 </NavLink>
-                <NavLink to={'/precompra'} className={({isActive}) => (isActive ? 'min-w-full' : 'min-w-full')}>
+                <NavLink to={'/signup'} className={({isActive}) => (isActive ? 'min-w-full' : 'min-w-full')}>
                     {props.graybtnv}
                 </NavLink>
                 {props.texts}

@@ -28,7 +28,7 @@ export default function MainPreCompra() {
           <div className="flex">
             <img
               className="w-[100px] h-[100px] bg-[#E2E3FF]"
-              src="src\assets\image\White-Sneakers-PNG-Clipart 2.png"
+              src="src/assets/image/White-Sneakers-PNG-Clipart 2.png"
               alt=""
             />
             <div className="grid space-y-[4%]">
@@ -111,7 +111,7 @@ export default function MainPreCompra() {
           <div className="flex">
             <img
               className="w-[90px] h-[70px] bg-[#E2E3FF]"
-              src="src\assets\image\White-Sneakers-PNG-Clipart 2.png"
+              src="src/assets/image/White-Sneakers-PNG-Clipart 2.png"
               alt=""
             />
             <p className="text-[#1F1F1F] w-full tracking-wider ml-[5%] font-bold text-[14px]">
