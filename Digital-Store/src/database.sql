@@ -20,6 +20,19 @@ CREATE TABLE IF NOT EXISTS brands(
     brand_status INTEGER DEFAULT 1 
 );
 
+INSERT INTO brands (brand_name) VALUES 
+('Nike'),
+('Adidas'),
+('Olimpikus'),
+('Puma'),
+('Mizuno'),
+('Penalty'),
+('Okley'),
+('Umbro'),
+('New balance'),
+('Lacoste'),
+('Balenciaga');
+
 CREATE TABLE IF NOT EXISTS categories(
     category_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     category_name VARCHAR(20) NOT NULL,
@@ -89,6 +102,38 @@ CREATE TABLE IF NOT EXISTS products(
     product_status INTEGER DEFAULT 1,
     product_condition INTEGER DEFAULT 1
 );
+
+ALTER TABLE products DROP product_discription;
+ALTER TABLE products ADD product_description VARCHAR(255) NULL;
+
+--Loucuras de um louco--
+
+INSERT INTO products (product_price, product_name, product_description, category_id, brand_id)
+SELECT 
+    ROUND(RAND() * (100 - 10) + 10, 2) as product_price, -- Valor decimal entre 10 e 100
+    CASE 
+        WHEN RAND() < 0.5 THEN 'Tênis' -- Metade das vezes será 'Tênis'
+        ELSE 'Camisa' -- Metade das vezes será 'Camisa'
+    END as product_name,
+    SUBSTRING('Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 1, FLOOR(RAND() * 50) + 1) as product_description, -- Lorem ipsum com até 50 caracteres
+    FLOOR(RAND() * 5) + 1 as category_id, -- Número aleatório entre 1 e 5
+    FLOOR(RAND() * 10) + 1 as brand_id -- Número aleatório entre 1 e 10
+FROM 
+    information_schema.tables
+LIMIT 100; 
+
+SELECT product_id, product_name, product_price, category_id, brand_id FROM products;
+SELECT product_id, product_name, product_price, category_id, brand_id FROM products ORDER BY product_price ASC;
+
+SELECT product_id, product_name, product_price, category_id, brand_id FROM products WHERE product_name= 'camisa';
+
+SELECT product_id, product_name, product_price, category_id, brand_id FROM products WHERE product_price > 15 AND product_price < 30 ORDER BY product_price;
+
+SELECT COUNT(*) FROM products WHERE product_price < 30;
+
+UPDATE products SET product_name = 'camisa 1' WHERE product_id = 4;
+
+--Crazy Train--
 
 ALTER TABLE products ADD(
     brand_id INTEGER FOREIGN KEY (brand_id) REFERENCES brands(brand_id),
