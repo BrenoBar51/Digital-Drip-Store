@@ -108,19 +108,22 @@ ALTER TABLE products ADD product_description VARCHAR(255) NULL;
 
 --Loucuras de um louco--
 
-INSERT INTO products (product_price, product_name, product_description, category_id, brand_id)
+INSERT INTO products (product_price, product_name, product_description, category_id, brand_id, product_discount, product_category, product_colors)
 SELECT 
-    ROUND(RAND() * (100 - 10) + 10, 2) as product_price, -- Valor decimal entre 10 e 100
+    ROUND(RAND() * (100 - 10) + 10, 2) as product_price,
     CASE 
-        WHEN RAND() < 0.5 THEN 'Tênis' -- Metade das vezes será 'Tênis'
-        ELSE 'Camisa' -- Metade das vezes será 'Camisa'
+        WHEN RAND() < 0.5 THEN 'Tênis'
+        ELSE 'Camisa'
     END as product_name,
-    SUBSTRING('Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 1, FLOOR(RAND() * 50) + 1) as product_description, -- Lorem ipsum com até 50 caracteres
-    FLOOR(RAND() * 5) + 1 as category_id, -- Número aleatório entre 1 e 5
-    FLOOR(RAND() * 10) + 1 as brand_id -- Número aleatório entre 1 e 10
+    SUBSTRING('Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 1, FLOOR(RAND() * 50) + 1) as product_description,
+    FLOOR(RAND() * 5) + 1 as category_id,
+    FLOOR(RAND() * 10) + 1 as brand_id,
+    0.00 as product_discount,
+    'Categoria' as product_category, -- Substitua 'Categoria' pelo valor desejado
+    'Cores' as product_colors -- Substitua 'Cores' pelo valor desejado
 FROM 
     information_schema.tables
-LIMIT 100; 
+LIMIT 100;
 
 SELECT product_id, product_name, product_price, category_id, brand_id FROM products;
 SELECT product_id, product_name, product_price, category_id, brand_id FROM products ORDER BY product_price ASC;
@@ -130,6 +133,12 @@ SELECT product_id, product_name, product_price, category_id, brand_id FROM produ
 SELECT product_id, product_name, product_price, category_id, brand_id FROM products WHERE product_price > 15 AND product_price < 30 ORDER BY product_price;
 
 SELECT COUNT(*) FROM products WHERE product_price < 30;
+
+SELECT product_id, product_name, product_price, category_name, brand_name 
+FROM products 
+INNER JOIN categories ON products.category_id = categories.category_id 
+INNER JOIN brands ON products.brand_id = brands.brand_id
+WHERE product_id = 30;
 
 UPDATE products SET product_name = 'camisa 1' WHERE product_id = 4;
 
