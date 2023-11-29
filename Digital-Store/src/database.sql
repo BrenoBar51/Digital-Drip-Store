@@ -105,7 +105,6 @@ CREATE TABLE IF NOT EXISTS products(
 
 ALTER TABLE products DROP product_discription;
 ALTER TABLE products ADD product_description VARCHAR(255) NULL;
-
 --Loucuras de um louco--
 
 INSERT INTO products (product_price, product_name, product_description, category_id, brand_id, product_discount, product_category, product_colors)
@@ -134,20 +133,33 @@ SELECT product_id, product_name, product_price, category_id, brand_id FROM produ
 
 SELECT COUNT(*) FROM products WHERE product_price < 30;
 
-SELECT product_id, product_name, product_price, category_name, brand_name 
+SELECT product_id, product_name, product_images, product_description, product_sizes, product_colors, product_price, products.category_id, category_name, products.brand_id, brand_name 
 FROM products 
 INNER JOIN categories ON products.category_id = categories.category_id 
 INNER JOIN brands ON products.brand_id = brands.brand_id
 WHERE product_id = 30;
 
 UPDATE products SET product_name = 'camisa 1' WHERE product_id = 4;
-
 --Crazy Train--
 
 ALTER TABLE products ADD(
     brand_id INTEGER FOREIGN KEY (brand_id) REFERENCES brands(brand_id),
     category_id INTEGER FOREIGN KEY (category_id) REFERENCES categories(category_id)
 );
+
+CREATE TABLE IF NOT EXISTS products_images (
+	product_image_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+	product_image_url VARCHAR(100) NOT NULL,
+	product_id INTEGER NOT NULL,
+	FOREIGN KEY(product_id) REFERENCES products (product_id)
+);
+
+INSERT INTO products_images (product_image_url, product_id)
+VALUES
+('https://imgnike-a.akamaihd.net/768x768/027796NX.jpg', 30),
+('https://imgnike-a.akamaihd.net/768x768/027796NXA1.jpg', 30),
+('https://imgnike-a.akamaihd.net/768x768/027796NXA2.jpg', 30),
+('https://imgnike-a.akamaihd.net/768x768/027796NXA3.jpg', 31);
 
 CREATE TABLE IF NOT EXISTS collections(
     collection_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
