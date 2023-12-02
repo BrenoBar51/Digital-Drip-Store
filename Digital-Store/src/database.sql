@@ -133,7 +133,7 @@ SELECT product_id, product_name, product_price, category_id, brand_id FROM produ
 
 SELECT COUNT(*) FROM products WHERE product_price < 30;
 
-SELECT product_id, product_name, product_images, product_description, product_sizes, product_colors, product_price, products.category_id, category_name, products.brand_id, brand_name 
+SELECT product_id, product_name, product_image, product_description, product_sizes, product_colors, product_price, products.category_id, category_name, products.brand_id, brand_name
 FROM products 
 INNER JOIN categories ON products.category_id = categories.category_id 
 INNER JOIN brands ON products.brand_id = brands.brand_id
