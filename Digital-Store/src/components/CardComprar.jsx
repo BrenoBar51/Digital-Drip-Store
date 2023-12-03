@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import img from "../../assets/image/White-Sneakers-PNG-Clipart 2.png"
+import img from "../assets/image/White-Sneakers-PNG-Clipart 2.png"
 
 export default function CardComprar(){
     return(
