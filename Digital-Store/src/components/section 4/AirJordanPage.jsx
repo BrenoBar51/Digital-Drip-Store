@@ -1,5 +1,5 @@
 import AirJordan from "./Airjordan";
-import img from '../assets/image/airjordan.png'
+import img from '../../assets/image/airjordan.png'
 import TitulosAirJordans from "./TituloAirJordans";
 
 export default function AirJordanPage() {
