@@ -1,10 +1,10 @@
 import FiveCardsIcons from "./FiveCardsIcons";
 import MicroTitle from "./MIcroTitle";
-import img1 from '../../assets/image/tshirt-_1_.png'
-import img2 from '../../assets/image/pants.png'
-import img3 from '../../assets/image/cap_icon-icons.com_59925.png'
-import img4 from '../../assets/image/headphones_1.png'
-import img5 from '../../assets/image/sneakers.png'
+import img1 from '../../assets/image/tshirt-_1_.png';
+import img2 from '../../assets/image/pants.png';
+import img3 from '../../assets/image/cap_icon-icons.com_59925.png';
+import img4 from '../../assets/image/headphones_1.png';
+import img5 from '../../assets/image/sneakers.png';
 
 export default function ColectionCards() {
     return (

@@ -1,8 +1,8 @@
 import MicroTitle from "./MIcroTitle";
 import ThreeCards from "./ThreeCards";
-import img from '../../assets/image/star-wars-storm-trooper-supreme-shirts-supreme-t-shirt-snoopy-clothing-apparel-t-shirt-text-transparent-png-616696.png'
-import img2 from '../../assets/image/ddd-1.png'
-import img3 from '../../assets/image/toppng.com-headphone-1092x1284.png'
+import img from '../../assets/image/star-wars-storm-trooper-supreme-shirts-supreme-t-shirt-snoopy-clothing-apparel-t-shirt-text-transparent-png-616696.png';
+import img2 from '../../assets/image/ddd-1.png';
+import img3 from '../../assets/image/toppng.com-headphone-1092x1284.png';
 
 export default function CardThree() {
   return (

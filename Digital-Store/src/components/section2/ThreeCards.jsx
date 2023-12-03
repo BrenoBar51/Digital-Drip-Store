@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom'
-import Buttons from '../Buttons'
+import { NavLink } from 'react-router-dom';
+import Buttons from '../Buttons';
 
 export default function ThreeCards(props) {
     return (

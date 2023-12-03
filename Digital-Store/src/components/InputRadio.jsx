@@ -1,7 +1,7 @@
 export default function InputRadio(props){
     return(
         <div>
-            <input type="radio" className={`w-4 h-4 rounded accent-[#C92071]
+            <input type="radio" className={`w-4 h-4 rounded accent-Rosa
             ${props.className}
             `}
             name={props.name}

@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import img from "../../assets/image/tenis-flutuante1.png";
+import img2 from "../../assets/image/tenis-flutuante2.png";
 import Input from "../../components/Inputs";
 
 export default function MainLogin(){
@@ -37,8 +39,8 @@ export default function MainLogin(){
                 </div>
             </div>
             <div className="flex h-[100%] w-[100%]">
-                <img className="mt-[15%] ml-[15%] w-[256px] h-[483px]" src="src/assets/image/pexels-melvin-buezo-2529148 1.png" alt="" />
-                <img className="w-[256px] h-[483px] mt-[58%]" src="src/assets/image/pexels-melvin-buezo-2529148 2.png" alt="" />
+                <img src={img} className="mt-[15%] ml-[15%] w-[256px] h-[483px]" alt="" />
+                <img src={img2} className="w-[256px] h-[483px] mt-[58%]" alt="" />
             </div>
         </div>
     )

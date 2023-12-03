@@ -1,5 +1,5 @@
-import img from '../assets/image/Produto1.png'
-import img2 from '../assets/image/Group-53582.png'
+import img from '../assets/image/Produto1.png';
+import img2 from '../assets/image/Group-53582.png';
 
 export default function Carrossel() {
     return (

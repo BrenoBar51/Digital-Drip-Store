@@ -1,5 +1,5 @@
 import Input from "../components/Inputs";
-import img from '../assets/image/Search.png'
+import img from '../assets/image/Search.png';
 
 export default function SearchBar(){
     return(

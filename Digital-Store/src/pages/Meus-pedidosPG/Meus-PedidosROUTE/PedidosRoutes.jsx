@@ -3,7 +3,7 @@ import Footer from "../../../Corpo/Footer";
 import Header from "../../../Corpo/Header";
 import MicroTitle from "../../../components/section2/MIcroTitle";
 import { TenisArray } from "./TenisArray";
-import { ConfigArray } from "./ConfigArray"
+import { ConfigArray } from "./ConfigArray";
 
 export default function PedidosRoutes() {
     return (

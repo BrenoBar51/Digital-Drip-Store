@@ -4,9 +4,8 @@ import PageButtons from "./PageButtons";
 import SearchBar from "./SearchBar";
 import CartPopup from "./CartPoPup/CartPopup"
 import MenuSide from "./MenuSide/MenuSide";
-import img1 from '../assets/image/menu-regular-36.png'
-import img2 from '../assets/image/Buy.png'
-import img3 from '../assets/image/menu-regular-36.png'
+import img1 from '../assets/image/menu-regular-36.png';
+import img2 from '../assets/image/Buy.png';
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 

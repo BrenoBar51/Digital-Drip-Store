@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import img1 from "../../assets/image/Stars.png";
+import img2 from "../../assets/image/Frame 9.png";
 
 export default function TituloProducts() {
      return(
@@ -7,9 +9,11 @@ export default function TituloProducts() {
          Tênis Nike Revolution 6 Next Nature Masculino
          </h1>
          <h5 className="text-[#666666]">Casual | Nike | REF:38416711</h5>
-         <img className="w-[92px] relative top-4" src="src\assets\image\Stars.png" alt="" />
-        <div className="flex"> <img className="relative left-24 bottom-[2px]" src="src\assets\image\Frame 9.png" alt="" />
-         <h6 className="relative bottom-[1.5px] left-[110px] text-[#8F8F8F]">(90 avaliações )</h6>
+         <img src={img1} className="w-[92px] relative top-4" alt="" />
+        <div className="flex">
+            <img src={img2} className="relative left-24 bottom-[2px]" alt="" />
+            <h6 className="relative bottom-[1.5px] left-[110px] text-[#8F8F8F]">(90 avaliações )
+            </h6>
          </div>
          <div className="flex relative left-[20px]">
          <h6 className=" relative top-[30px] right-[21px] text-[19px] text-[#474747]">R$</h6 > <h5 className="font-bold relative top-4 right-[20px] text-[31px] text-[#474747]">219,00</h5> <h5 className="relative top-[31px] right-[14px] text-[17px] text-[#CCCCCC] line-through">219,00</h5>

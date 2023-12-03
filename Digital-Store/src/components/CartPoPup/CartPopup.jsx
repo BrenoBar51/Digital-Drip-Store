@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MicroTitle from "../section2/MIcroTitle";
 import Cardzin from "./Cardzin";
 import Buttons from "../Buttons";
-import img from '../../assets/image/Buy.png'
+import img from '../../assets/image/Buy.png';
 
 function CartIcon() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);

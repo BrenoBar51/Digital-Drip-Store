@@ -1,4 +1,3 @@
-
 export function ConfigArray(props) {
     return (
         <>
