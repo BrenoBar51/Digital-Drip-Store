@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import img from "../../assets/image/White-Sneakers-PNG-Clipart 2.png"
 
 export default function ConteudoCompraRealizada() {
   return (
@@ -41,8 +42,8 @@ export default function ConteudoCompraRealizada() {
       <h1 className="text-Cinza-Escuro2 font-semibold ml-[5%] mt-[2%]  ">Resumo da compra</h1>
       <div className="flex ml-[5%] mt-[4%] gap-4">
         <img
+          src={img}
           className="w-[71.17px] h-[58px] shrink-0 rounded-[2.6px] bg-Lilás "
-          src="src/assets/image/CardTenisForIN.png"
           alt=""
         />
         <h1 className="text-Cinza-Escuro text-[20px] font-bold  ">

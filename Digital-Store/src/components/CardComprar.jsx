@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import img from "../../assets/image/White-Sneakers-PNG-Clipart 2.png"
 
 export default function CardComprar(){
     return(
@@ -6,7 +7,7 @@ export default function CardComprar(){
         <p className="font-bold text-[#474747] w-[306px] tracking-wide text-[24px]">Resumo</p>
             <hr className=""/>
             <div className="flex">
-                <img className="w-[90px] h-[70px] bg-[#E2E3FF]" src="src/assets/image/CardTenisForIN.png" alt="" />
+                <img src={img} className="w-[90px] h-[70px] bg-[#E2E3FF]" alt="" />
                 <p className="text-[#1F1F1F] w-full tracking-wider ml-[5%] font-bold text-[14px]">Tênis Nike Revolution 6 Next Nature<br/>Masculino</p>
             </div>
             <hr className=""/>
