@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS products(
 
 ALTER TABLE products DROP product_discription;
 ALTER TABLE products ADD product_description VARCHAR(255) NULL;
---Loucuras de um louco--
+--teste--
 
 INSERT INTO products (product_price, product_name, product_description, category_id, brand_id, product_discount, product_category, product_colors)
 SELECT 
@@ -140,7 +140,7 @@ INNER JOIN brands ON products.brand_id = brands.brand_id
 WHERE product_id = 30;
 
 UPDATE products SET product_name = 'camisa 1' WHERE product_id = 4;
---Crazy Train--
+--ajustes--
 
 ALTER TABLE products ADD(
     brand_id INTEGER FOREIGN KEY (brand_id) REFERENCES brands(brand_id),
